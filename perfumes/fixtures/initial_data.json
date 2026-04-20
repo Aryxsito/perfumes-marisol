@@ -1,0 +1,1944 @@
+[
+{
+  "model": "perfumes.acorde",
+  "pk": 1,
+  "fields": {
+    "nombre": "dulce",
+    "color": "#FF6B6B"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 2,
+  "fields": {
+    "nombre": "tabaco",
+    "color": "#A0826D"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 3,
+  "fields": {
+    "nombre": "afrutados",
+    "color": "#E74C3C"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 4,
+  "fields": {
+    "nombre": "avainillado",
+    "color": "#F5DEB3"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 5,
+  "fields": {
+    "nombre": "fresco especiado",
+    "color": "#76C043"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 6,
+  "fields": {
+    "nombre": "cálido especiado",
+    "color": "#8B4513"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 7,
+  "fields": {
+    "nombre": "especiado suave",
+    "color": "#A9825E"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 8,
+  "fields": {
+    "nombre": "amaderado",
+    "color": "#654321"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 9,
+  "fields": {
+    "nombre": "fresco",
+    "color": "#5DADE2"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 10,
+  "fields": {
+    "nombre": "cítrico",
+    "color": "#ffff00"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 11,
+  "fields": {
+    "nombre": "aromático",
+    "color": "#4a7c7e"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 12,
+  "fields": {
+    "nombre": "verde",
+    "color": "#2d5016"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 13,
+  "fields": {
+    "nombre": "ozónico",
+    "color": "#7dd3c0"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 14,
+  "fields": {
+    "nombre": "atalcado",
+    "color": "#b3a89f"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 15,
+  "fields": {
+    "nombre": "almizclado",
+    "color": "#d4b5d4"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 16,
+  "fields": {
+    "nombre": "ámbar",
+    "color": "#a0581c"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 17,
+  "fields": {
+    "nombre": "acuático",
+    "color": "#5db3d4"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 18,
+  "fields": {
+    "nombre": "herbal",
+    "color": "#5a7a5a"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 19,
+  "fields": {
+    "nombre": "floral blanco",
+    "color": "#f0f0f0"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 20,
+  "fields": {
+    "nombre": "florales",
+    "color": "#c85a7f"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 21,
+  "fields": {
+    "nombre": "caramelo",
+    "color": "#8b6f47"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 22,
+  "fields": {
+    "nombre": "terrosos",
+    "color": "#7a6d5d"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 23,
+  "fields": {
+    "nombre": "marino",
+    "color": "#1e5a96"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 24,
+  "fields": {
+    "nombre": "salado",
+    "color": "#c9bfb5"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 25,
+  "fields": {
+    "nombre": "rosas",
+    "color": "#b8247a"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 26,
+  "fields": {
+    "nombre": "balsámico",
+    "color": "#8b7355"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 27,
+  "fields": {
+    "nombre": "lavanda",
+    "color": "#9b7bb2"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 28,
+  "fields": {
+    "nombre": "iris",
+    "color": "#a796b5"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 29,
+  "fields": {
+    "nombre": "violeta",
+    "color": "#6a3a7a"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 30,
+  "fields": {
+    "nombre": "coco",
+    "color": "#B8B8B8"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 31,
+  "fields": {
+    "nombre": "floral amarillo",
+    "color": "#C4A844"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 32,
+  "fields": {
+    "nombre": "canela",
+    "color": "#B8724D"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 33,
+  "fields": {
+    "nombre": "café",
+    "color": "#704D3D"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 34,
+  "fields": {
+    "nombre": "aldehídico",
+    "color": "#8f8f8f"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 35,
+  "fields": {
+    "nombre": "ron",
+    "color": "#8b4513"
+  }
+},
+{
+  "model": "perfumes.acorde",
+  "pk": 36,
+  "fields": {
+    "nombre": "lactónico",
+    "color": "#a9a9a9"
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 7,
+  "fields": {
+    "nombre": "Fragrance world Nudo Exótico flower",
+    "inspiracion": "Inspirado en Narcotic Delight de Initio Parfums Prives",
+    "caracteristicas": "",
+    "descripcion": "Características:\r\n- Marca: Fragrance World\r\n- Tipo: Eau de Parfum (EDP)\r\n- Contenido: 100ml\r\n- Género: Unisex\r\n- Estilo: Ambarado oriental\r\n\r\nAroma equilibrado y agradable, pensado para acompañar tu día con personalidad y estilo. Ideal para uso diario, oficina u ocasiones especiales según tu gusto.",
+    "stock": 3,
+    "precio": 30000,
+    "imagen": "perfumes/imitaciones/Fragrance_world_Nudo_Exótico_flower.webp",
+    "imagen_original": "perfumes/originales/Narcotic_Delight_de_Initio_Parfums_Prives.webp",
+    "acordes": [
+      3,
+      8,
+      4,
+      6,
+      1,
+      7,
+      9,
+      5
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 8,
+  "fields": {
+    "nombre": "Nudo Sweet Berries",
+    "inspiracion": "Inspirado en Oriana de Parfums de Marly",
+    "caracteristicas": "",
+    "descripcion": "Nudo Sweet Berries de Fragrance World es una fragancia frutal gourmand que combina la dulzura de frutos rojos con la cremosidad de la vainilla y la frescura de la bergamota. Un toque de jazmín añade elegancia, creando un aroma jugoso y femenino.\r\n\r\nCaracterísticas Principales:\r\nFamilia Olfativa: Floral Frutal Gourmand.\r\nAroma: Dulce, cremoso, frutal y con un ligero toque cítrico y atalcado.\r\nNotas de Salida: Bergamota, naranja, mandarina y toronja (pomelo).\r\nNotas de Corazón: Frambuesa, grosellas negras y flor de azahar del naranjo.",
+    "stock": 3,
+    "precio": 30000,
+    "imagen": "perfumes/imitaciones/Nudo_Sweet_Berries.webp",
+    "imagen_original": "perfumes/originales/Oriana_de_Parfums_de_Marly.webp",
+    "acordes": [
+      3,
+      15,
+      11,
+      14,
+      10,
+      1,
+      19,
+      20,
+      5
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 9,
+  "fields": {
+    "nombre": "Nudo Green Irish",
+    "inspiracion": "Inspirado en Decadence de Marc Jacobs",
+    "caracteristicas": "",
+    "descripcion": "Nudo Green Iris de Fragrance World es una fragancia aromática amaderada y unisex que equilibra frescura verde con elegancia terrosa. Combina notas de hojas de violeta, iris, pachulí y vetiver sobre una base de maderas y almizcle.\r\n\r\nCaracterísticas Principales:\r\nAroma: Fresco, verde, amaderado y ligeramente empolvado.\r\nNotas de Salida: Notas verdes, hojas de violeta, cítricos.\r\nNotas de Corazón: Iris, matices herbales.\r\nNotas de Fondo: Maderas nobles, pachulí, vetiver, almizcle.",
+    "stock": 3,
+    "precio": 30000,
+    "imagen": "perfumes/imitaciones/Nudo_Green_Irish.webp",
+    "imagen_original": "perfumes/originales/Decadence_de_Marc_Jacobs.webp",
+    "acordes": [
+      15,
+      8,
+      14,
+      4,
+      10,
+      1,
+      20,
+      16
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 10,
+  "fields": {
+    "nombre": "Nudo Tutti Frutti unisex",
+    "inspiracion": "Inspirado en  Erba Pura Xerjoff",
+    "caracteristicas": "",
+    "descripcion": "Nudo Tutti Frutti de Fragrance World es una fragancia unisex caracterizada por ser una explosión frutal-gourmand vibrante y dulce, con notas de piña, melón, gomitas y vainilla.\r\n\r\nCaracterísticas y Notas Principales:\r\nFamilia Olfativa: Floral Frutal Gourmand.\r\nNotas de Salida (Frutales): Piña, melón, naranja tangerina, fresa, frambuesa, durazno.\r\nNotas de Corazón (Dulces): Gummy Candies (gomitas), jazmín, peonía, caramelo, flores blancas.\r\nNotas de Fondo (Cremosas): Vainilla, almizcle, madera dulce.",
+    "stock": 3,
+    "precio": 30000,
+    "imagen": "perfumes/imitaciones/Nudo_aTutti_Frutti_unisex.webp",
+    "imagen_original": "perfumes/originales/erba_pura_edp_50_ml_9Jjfs2A.webp",
+    "acordes": [
+      17,
+      3,
+      4,
+      10,
+      1,
+      19,
+      9,
+      13
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 11,
+  "fields": {
+    "nombre": "Armaf Odyssey Mega",
+    "inspiracion": "Insipirado en Yves Saint Laurent",
+    "caracteristicas": "",
+    "descripcion": "Características:\r\n- Marca: Armaf\r\n- Tipo: Eau de Parfum (EDP)\r\n- Contenido: 100ml\r\n- Género: Hombre\r\n- Estilo: Oriental ambarado\r\n\r\nAroma equilibrado y agradable, pensado para acompañar tu día con personalidad y estilo. Ideal para uso diario, oficina u ocasiones especiales según tu gusto.",
+    "stock": 3,
+    "precio": 48000,
+    "imagen": "perfumes/imitaciones/Armaf_Odyssey_Mega.webp",
+    "imagen_original": "perfumes/originales/yves_saint_laurent.webp",
+    "acordes": [
+      3,
+      15,
+      8,
+      11,
+      10,
+      1,
+      9,
+      5,
+      18,
+      12
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 12,
+  "fields": {
+    "nombre": "Maison Alhambra Lava unisex",
+    "inspiracion": "Inspirado en Dior Sauvage",
+    "caracteristicas": "",
+    "descripcion": "es una fragancia unisex intensa y magnética, que combina notas especiadas, amaderadas y orientales para crear un aroma profundo y cálido. Con una salida fresca de menta y lavanda, y un corazón amaderado de cedro, es ideal para la noche, otoño e invierno. \r\n\r\nDetalles Principales:\r\nAroma: Intensamente especiado y amaderado, diseñado para destacar.\r\nGénero: Unisex (a menudo comercializado para hombres, pero versátil).\r\nNotas de Salida: Menta verde y lavanda.\r\nNotas de Corazón: Geranio y madera de cedro.",
+    "stock": 3,
+    "precio": 25000,
+    "imagen": "perfumes/imitaciones/Maisom_Alhambra_Lava.webp",
+    "imagen_original": "perfumes/originales/Sauvage.webp",
+    "acordes": [
+      8,
+      7,
+      9,
+      27,
+      12
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 13,
+  "fields": {
+    "nombre": "Lattafa Hayaati unisex",
+    "inspiracion": "Inspirado en Invictus de Paco Rabanne",
+    "caracteristicas": "",
+    "descripcion": "Lattafa Hayaati Men EDP 100 ml es una fragancia masculina envolvente y sofisticada con notas amaderadas y especiadas. Su fragancia poderosa evoca una sensación de lujo, ideal para hombres que buscan una esencia única y fuerte, perfecta para ocasiones tanto diurnas como nocturnas.\r\n\r\nNotas de salida: limón, bergamota, manzana\r\nNotas de corazón: geranio, rosa, lavanda\r\nNotas de fondo: sándalo, cedro, musgo",
+    "stock": 3,
+    "precio": 30000,
+    "imagen": "perfumes/imitaciones/Lattafa_Hayaati_unisex.webp",
+    "imagen_original": "perfumes/originales/invictus_paco_rabanne.webp",
+    "acordes": [
+      3,
+      15,
+      8,
+      14,
+      4,
+      32,
+      6,
+      10,
+      9,
+      12
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 14,
+  "fields": {
+    "nombre": "Le Chameau Arabia Al Oud unisex",
+    "inspiracion": "Inspirado en Tom Ford Oud Wood",
+    "caracteristicas": "",
+    "descripcion": "Características:\r\n- Marca: EMPER\r\n- Tipo: Eau de Parfum (EDP)\r\n- Contenido: 100ml\r\n- Género: Unisex\r\n- Estilo: Oriental ambarado\r\n\r\nAroma equilibrado y agradable, pensado para acompañar tu día con personalidad y estilo. Ideal para uso diario, oficina u ocasiones especiales según tu gusto.",
+    "stock": 3,
+    "precio": 38000,
+    "imagen": "perfumes/imitaciones/Le_Chameau_Arabia_Al_Oud_unisex.webp",
+    "imagen_original": "perfumes/originales/Tom_Ford_Oud_Wood.webp",
+    "acordes": [
+      8,
+      11,
+      14,
+      4,
+      26,
+      6,
+      1,
+      5,
+      16
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 15,
+  "fields": {
+    "nombre": "Le Chameau Arabia Malaak mujer",
+    "inspiracion": "Inspirado en Paco Rabanne One Million Privé",
+    "caracteristicas": "",
+    "descripcion": "Características:\r\n- Marca: EMPER\r\n- Tipo: Eau de Parfum (EDP)\r\n- Contenido: 100ml\r\n- Género: Hombre\r\n- Estilo: Oriental ambarado\r\n\r\nAroma equilibrado y agradable, pensado para acompañar tu día con personalidad y estilo. Ideal para uso diario, oficina u ocasiones especiales según tu gusto",
+    "stock": 3,
+    "precio": 38000,
+    "imagen": "perfumes/imitaciones/Le_Chameau_Arabia_Malaak_mujer.webp",
+    "imagen_original": "perfumes/originales/Paco_rabanne_parfum_intense_7gUuTxZ.webp",
+    "acordes": [
+      8,
+      14,
+      4,
+      26,
+      6,
+      1,
+      36
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 16,
+  "fields": {
+    "nombre": "Fragrance world Justo wardi mujer",
+    "inspiracion": "Inspirado en Yara de Lattafa",
+    "caracteristicas": "",
+    "descripcion": "Características:\r\n- Marca: Fragrance World\r\n- Tipo: Eau de Parfum (EDP)\r\n- Contenido: 100ml\r\n- Género: Mujer\r\n- Estilo: Oriental ambarado\r\n\r\nAroma equilibrado y agradable, pensado para acompañar tu día con personalidad y estilo. Ideal para uso diario, oficina u ocasiones especiales según tu gusto.",
+    "stock": 3,
+    "precio": 30000,
+    "imagen": "perfumes/imitaciones/Fragrance_world_Justo_wardi_mujer.webp",
+    "imagen_original": "perfumes/originales/Yara_de_Lattafa.webp",
+    "acordes": [
+      3,
+      8,
+      14,
+      4,
+      21,
+      30,
+      10,
+      1,
+      31,
+      19
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 17,
+  "fields": {
+    "nombre": "Fragrance world Just Lychee unisex",
+    "inspiracion": "Inspirado en Eden Sparkling Lychee",
+    "caracteristicas": "",
+    "descripcion": "Características:\r\n- Marca: Fragrance World\r\n- Tipo: Eau de Parfum (EDP)\r\n- Contenido: 100ml\r\n- Género: Mujer\r\n- Estilo: Oriental ambarado\r\n\r\nAroma equilibrado y agradable, pensado para acompañar tu día con personalidad y estilo. Ideal para uso diario, oficina u ocasiones especiales según tu gusto.",
+    "stock": 3,
+    "precio": 35000,
+    "imagen": "perfumes/imitaciones/Fragrance_world_Justo_Lychee_unisex.webp",
+    "imagen_original": "perfumes/originales/Eden_Sparkling_Lychee.webp",
+    "acordes": [
+      3,
+      15,
+      14,
+      4,
+      19,
+      9,
+      25
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 18,
+  "fields": {
+    "nombre": "Lattafa Yara Candy Dama 100 ml",
+    "inspiracion": "Inspirado en Poison Girl de Dior",
+    "caracteristicas": "",
+    "descripcion": "Lattafa Yara Candy EDP 100 ml es una fragancia femenina dulce y envolvente, que combina notas frutales y florales con un toque suave y cremoso.\r\nIdeal para las mujeres que buscan una esencia alegre y cautivadora para el uso diario, especialmente en estaciones cálidas como primavera y verano.\r\n\r\nNotas de salida: frambuesa, manzana, limón\r\nNotas de corazón: jazmín, rosa, flor de azahar\r\nNotas de fondo: vainilla, almizcle, sándalo",
+    "stock": 3,
+    "precio": 35000,
+    "imagen": "perfumes/imitaciones/Lattafa_Yara_Candy_Dama_100_ml_mujer.webp",
+    "imagen_original": "perfumes/originales/Poison_Girl_de_Dior.webp",
+    "acordes": [
+      3,
+      15,
+      8,
+      11,
+      14,
+      4,
+      10,
+      7,
+      19
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 19,
+  "fields": {
+    "nombre": "Lattafa Yara Dama",
+    "inspiracion": "Inspirado en Poison Girl de Dior",
+    "caracteristicas": "",
+    "descripcion": "Lattafa Yara EDP 100 ml es una fragancia árabe femenina que combina lo dulce y lo floral con un toque fresco. Es una esencia ligera, ideal para mujeres que buscan un aroma suave pero cautivador, perfecto tanto para el día como para la noche.\r\n\r\nNotas de salida: limón, naranja, durazno\r\nNotas de corazón: rosa, jazmín, frangipani\r\nNotas de fondo: almizcle, madera de sándalo, ámbar",
+    "stock": 3,
+    "precio": 35000,
+    "imagen": "perfumes/imitaciones/Lattafa_Yara_Dama_100_ml_mujer..webp",
+    "imagen_original": "perfumes/originales/Poison_Girl_de_Dior_H31B10n.webp",
+    "acordes": [
+      3,
+      15,
+      14,
+      4,
+      10,
+      1,
+      20
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 20,
+  "fields": {
+    "nombre": "Emper Milestone Eden Dream unisex",
+    "inspiracion": "Inspirado en  Erba Pura Xerjoff",
+    "caracteristicas": "",
+    "descripcion": "Perfume Milestone Eden Dream 100Ml – Floral dulce suave. Ideal para quienes buscan un aroma duradero, versátil y con personalidad. Perfecto para uso diario, encuentros especiales o para acompañar momentos importantes con un toque distinguido y seguro.\r\n\r\nMarca: Consultar disponibilidad\r\nTipo: Eau de Parfum (EDP)\r\nContenido: Según detalle\r\nGénero: Unisex\r\nEstilo: Oriental / Floral / Amaderado",
+    "stock": 3,
+    "precio": 30000,
+    "imagen": "perfumes/imitaciones/Emper_Milestone_Eden_Dream_unisex.webp",
+    "imagen_original": "perfumes/originales/erba_pura_xerjoff.webp",
+    "acordes": [
+      15,
+      8,
+      1,
+      20
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 21,
+  "fields": {
+    "nombre": "Le Chameau Arabia Emotion",
+    "inspiracion": "Inspirado en  D&G Devotion",
+    "caracteristicas": "",
+    "descripcion": "Características: \r\nMarca: Consultar disponibilidad\r\nTipo: Eau de Parfum (EDP)\r\nContenido: Según detalle\r\nGénero: Unisex\r\nEstilo: Oriental / Floral / Amaderado\r\n\r\nAroma equilibrado pensado para acompañar tu día con presencia, estilo y un acabado memorable",
+    "stock": 3,
+    "precio": 35000,
+    "imagen": "perfumes/imitaciones/Le_Chameau_Arabia_Emotion.webp",
+    "imagen_original": "perfumes/originales/DG_Devotion.webp",
+    "acordes": [
+      8,
+      14,
+      4,
+      10,
+      1,
+      19,
+      36,
+      35
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 22,
+  "fields": {
+    "nombre": "Fragrance world John Gustavo Homme le Parfum",
+    "inspiracion": "Inspirado en  Le Male Le Parfum",
+    "caracteristicas": "",
+    "descripcion": "Características:\r\n- Marca: Fragrance World\r\n- Tipo: Eau de Parfum (EDP)\r\n- Contenido: 100ml\r\n- Género: Unisex\r\n- Estilo: Oriental ambarado\r\n\r\nAroma equilibrado y agradable, pensado para acompañar tu día con personalidad y estilo. Ideal para uso diario, oficina u ocasiones especiales según tu gusto.",
+    "stock": 3,
+    "precio": 25000,
+    "imagen": "perfumes/imitaciones/Fragrance_world_John_Gustavo_Homme_le_Parfun.webp",
+    "imagen_original": "perfumes/originales/Jean_Paul_Gaultier_LE_Male_LE_Parfum.webp",
+    "acordes": [
+      8,
+      11,
+      14,
+      4,
+      6,
+      1,
+      5,
+      28,
+      27,
+      29
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 23,
+  "fields": {
+    "nombre": "Emper Sovereign Elixir unisex",
+    "inspiracion": "Inspirado en Burberry Her Elixir",
+    "caracteristicas": "",
+    "descripcion": "Ámbar cálido y maderas elegantes. Ideal para quienes buscan un aroma duradero, versátil y con personalidad. Perfecto para uso diario, encuentros especiales o para acompañar momentos importantes con un toque distinguido y seguro.\r\n\r\nMarca: Consultar disponibilidad\r\nTipo: Eau de Parfum (EDP)\r\nContenido: Según detalle\r\nGénero: Unisex\r\nEstilo: Oriental / Floral / Amaderado",
+    "stock": 3,
+    "precio": 35000,
+    "imagen": "perfumes/imitaciones/Emper_Sovereign_Elixir_unisex.webp",
+    "imagen_original": "perfumes/originales/Burberry_Her_Elixir..webp",
+    "acordes": [
+      15,
+      8,
+      20,
+      12
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 24,
+  "fields": {
+    "nombre": "Lattafa Yara Moi",
+    "inspiracion": "Inspirado en Perfect Intense de Marc Jacobs",
+    "caracteristicas": "",
+    "descripcion": "Lattafa Yara Moi EDP 100 ml es una fragancia femenina y envolvente que combina notas florales y dulces, con un toque de frescura que la hace perfecta para el día a día.\r\nSu aroma sofisticado y duradero te acompañará durante todo el día, brindando una sensación de frescura y elegancia.\r\n\r\nNotas de salida: bergamota, pera, frambuesa\r\nNotas de corazón: rosa, jazmín, lirio\r\nNotas de fondo: almizcle, sándalo, ámbar",
+    "stock": 3,
+    "precio": 38000,
+    "imagen": "perfumes/imitaciones/Lattafa_Yara_Moi.webp",
+    "imagen_original": "perfumes/originales/Perfect_Intense_de_Marc_Jacobs.webp",
+    "acordes": [
+      3,
+      8,
+      14,
+      26,
+      21,
+      6,
+      1,
+      19,
+      16
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 25,
+  "fields": {
+    "nombre": "Le Chameau Arabia Orchid unisex",
+    "inspiracion": "Inspirado en Black Orchid Parfum de Tom Ford",
+    "caracteristicas": "",
+    "descripcion": "Características:\r\n- Marca: EMPER\r\n- Tipo: Eau de Parfum (EDP)\r\n- Contenido: 100ml\r\n- Género: Unisex\r\n- Estilo: Oriental ambarado\r\n\r\nAroma equilibrado y agradable, pensado para acompañar tu día con personalidad y estilo. Ideal para uso diario, oficina u ocasiones especiales según tu gusto.",
+    "stock": 3,
+    "precio": 35000,
+    "imagen": "perfumes/imitaciones/Le_Chameau_Arabia_Orchid_unisex.webp",
+    "imagen_original": "perfumes/originales/Black_Orchid_Parfum_de_Tom_Ford.webp",
+    "acordes": [
+      3,
+      8,
+      6,
+      1,
+      31,
+      20,
+      35,
+      22
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 26,
+  "fields": {
+    "nombre": "Emper Unplugged With You hombre",
+    "inspiracion": "Inspirado en Armani Stronger With You Intensely",
+    "caracteristicas": "",
+    "descripcion": "Características:\r\n- Marca: EMPER\r\n- Tipo: Eau de Parfum (EDP)\r\n- Contenido: 80ml\r\n- Género: Hombre\r\n- Estilo: Oriental ambarado\r\n\r\nAroma equilibrado y agradable, pensado para acompañar tu día con personalidad y estilo. Ideal para uso diario, oficina u ocasiones especiales según tu gusto.",
+    "stock": 3,
+    "precio": 35000,
+    "imagen": "perfumes/imitaciones/Emper_Unplugged_With_You_hombre.webp",
+    "imagen_original": "perfumes/originales/Armani_Stronger_With_You_Intensely.webp",
+    "acordes": [
+      3,
+      15,
+      1,
+      16
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 27,
+  "fields": {
+    "nombre": "Le Chameau Arabia The Beauty hombre",
+    "inspiracion": "Inspirado en Jean Paul Gaultier Le Beau",
+    "caracteristicas": "",
+    "descripcion": "Características:\r\n- Marca: EMPER\r\n- Tipo: Eau de Parfum (EDP)\r\n- Contenido: 100ml\r\n- Género: Hombre\r\n- Estilo: Oriental ambarado\r\n\r\nAroma equilibrado y agradable, pensado para acompañar tu día con personalidad y estilo. Ideal para uso diario, oficina u ocasiones especiales según tu gusto.",
+    "stock": 3,
+    "precio": 35000,
+    "imagen": "perfumes/imitaciones/Le_Chameau_Arabia_The_Beauty_hombre.webp",
+    "imagen_original": "perfumes/originales/Jean_Paul_Gaultier_Le_Beau.webp",
+    "acordes": [
+      3,
+      8,
+      14,
+      4,
+      30,
+      1,
+      5,
+      28,
+      16
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 28,
+  "fields": {
+    "nombre": "Armaf Tag Him",
+    "inspiracion": "Insipirado en Bleu de Chanel Eau de Toilette",
+    "caracteristicas": "",
+    "descripcion": "Armaf Tag Him EDP 100 ml es una fragancia masculina fresca y versátil que se abre con cítricos vibrantes, transita por un corazón especiado-mentolado y se asienta en una base amaderada refinada.\r\n\r\nNotas de salida: Pomelo, Limón, Bergamota, Pimienta Rosa.\r\nNotas de corazón: Jengibre, Menta, Nuez Moscada, Lavanda.\r\nNotas de fondo: Vetiver, Pachulí, Sándalo, Cedro.\r\n\r\nAroma: Amaderado\r\nGénero: Hombre\r\nOcasión: Día/Noche",
+    "stock": 3,
+    "precio": 35000,
+    "imagen": "perfumes/imitaciones/Armaf_Tag_Him.webp",
+    "imagen_original": "perfumes/originales/Bleu_de_Chanel_Eau_de_Toilette.webp",
+    "acordes": [
+      8,
+      11,
+      10,
+      9,
+      5,
+      22,
+      12
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 29,
+  "fields": {
+    "nombre": "Athoor Al Alam Al Raiee unisex",
+    "inspiracion": "Inspirado en 1 Million Elixir de Paco Rabanne",
+    "caracteristicas": "",
+    "descripcion": "Características Principales:\r\n-Perfil Olfativo: Oriental Amaderado/Frutal.\r\n-Notas de Salida: Manzana y Davana (notas                                            afrutadas/alcohólicas).\r\n-Notas de Corazón: Rosa de Damasco, Cedro y Osmanto.\r\n-Notas de Fondo: Absoluto de Vainilla, Haba Tonka y Pachulí.\r\n-Rendimiento: Alta duración (alrededor de 8 horas) y buena proyección.\r\n\r\nUso Ideal: Se recomienda para otoño e invierno, especialmente para la noche o citas, debido a su naturaleza seductora y dulce",
+    "stock": 3,
+    "precio": 30000,
+    "imagen": "perfumes/imitaciones/Athoor_Al_Alam_Al_Raiee_unisex.webp",
+    "imagen_original": "perfumes/originales/Paco_rabanne_parfum_intense.webp",
+    "acordes": [
+      3,
+      8,
+      11,
+      4,
+      26,
+      1,
+      20,
+      25,
+      12,
+      16
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 30,
+  "fields": {
+    "nombre": "Le Chameau Arabia Silver Vetiver unisex",
+    "inspiracion": "Inspirado en Tom Ford Grey Vetiver Parfum",
+    "caracteristicas": "",
+    "descripcion": "Características:\r\n- Marca: EMPER\r\n- Tipo: Eau de Parfum (EDP)\r\n- Contenido: 100ml\r\n- Género: Unisex\r\n- Estilo: Oriental ambarado\r\n\r\nAroma equilibrado y agradable, pensado para acompañar tu día con personalidad y estilo. Ideal para uso diario, oficina u ocasiones especiales según tu gusto.",
+    "stock": 3,
+    "precio": 35000,
+    "imagen": "perfumes/imitaciones/Le_Chameau_Arabia_Silver_Vetiver_unisex.webp",
+    "imagen_original": "perfumes/originales/Tom_Ford_Grey_Vetiver_Parfum.webp",
+    "acordes": [
+      8,
+      11,
+      6,
+      10,
+      1,
+      19,
+      22,
+      12
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 31,
+  "fields": {
+    "nombre": "Emper The Immencity unisex",
+    "inspiracion": "Inspirado en L'Immensité Louis Vuitton",
+    "caracteristicas": "",
+    "descripcion": "Características:\r\n- Marca: EMPER\r\n- Tipo: Eau de Parfum (EDP)\r\n- Contenido: 100ml\r\n- Género: Unisex\r\n- Estilo: Oriental ambarado\r\n\r\nAroma equilibrado y agradable, pensado para acompañar tu día con personalidad y estilo. Ideal para uso diario, oficina u ocasiones especiales según tu gusto.",
+    "stock": 3,
+    "precio": 30000,
+    "imagen": "perfumes/imitaciones/Emper_The_Immencity_unisex.webp",
+    "imagen_original": "perfumes/originales/The_Immencity_Milestone_Perfumes.webp",
+    "acordes": [
+      15,
+      9,
+      5,
+      23,
+      16
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 32,
+  "fields": {
+    "nombre": "Fragrance world Proud of You Men",
+    "inspiracion": "Inspirado en Emporio Armani Stronger With You",
+    "caracteristicas": "",
+    "descripcion": "Familia Olfativa: Oriental Especiada.\r\n\r\nNotas de Salida: Pimienta rosa, cardamomo, mandarina.\r\n\r\nNotas de Corazón: Lavanda, salvia, castaña.\r\n\r\nNotas de Fondo: Vainilla, cuero, maderas nobles.\r\n\r\nEstilo: Cálido, seductor y dulce, con una vibrante mezcla especiada.\r\n\r\nVersiones: Existe la versión \"Absolute\" (notas de ron, más intenso) y \"Intense\".\r\n\r\nUso Recomendado: Especialmente diseñado para climas fríos, noches y ocasiones especiales debido a su calidez.",
+    "stock": 3,
+    "precio": 0,
+    "imagen": "perfumes/imitaciones/Fragrance_world_Proud_of_You_Men.webp",
+    "imagen_original": "perfumes/originales/Armani_Stronger_With_You_Intensely_Bqy6Lxg.webp",
+    "acordes": [
+      15,
+      11,
+      4,
+      6,
+      10,
+      1,
+      7,
+      18,
+      27
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 33,
+  "fields": {
+    "nombre": "Lattafa Khamrah Qahwa unisex",
+    "inspiracion": "Inspirado en  Kilian Angels Share",
+    "caracteristicas": "",
+    "descripcion": "Características Principales:\r\nAroma: Considerado \"delicioso\" y adictivo, a menudo descrito como un café cremoso con especias.\r\n\r\nDiferencia con la original: Comparada con la Khamrah clásica, la versión Qahwa tiene una nota de café más pronunciada y equilibrada, siendo menos densa pero manteniendo una alta calidad.\r\n\r\nVersatilidad: Aunque es unisex, tiende a tener un toque que algunos perciben como ligeramente masculino, pero es totalmente adecuada para cualquier persona.\r\n\r\nRendimiento: Destaca por tener una fijación, estela y proyección muy fuertes, ideal para quienes buscan sobresalir",
+    "stock": 3,
+    "precio": 46000,
+    "imagen": "perfumes/imitaciones/Lattafa_Khamrah_Qahwa_unisex.webp",
+    "imagen_original": "perfumes/originales/Kilian_Angels_Share.webp",
+    "acordes": [
+      14,
+      4,
+      33,
+      32,
+      6,
+      1,
+      16
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 34,
+  "fields": {
+    "nombre": "Lattafa Confidencial Platinum unisex",
+    "inspiracion": "Inspirado en Allure Homme Sport Chanel",
+    "caracteristicas": "",
+    "descripcion": "Características Principales:\r\nAroma: Cítrico, limpio y amaderado con un toque marino y dulce. \r\n\r\nMuchos lo describen como un aroma a \"champú de cinco estrellas\" o limpio.\r\n\r\nNotas: Salida de cítricos, bergamota, ciprés y pimienta negra; corazón de notas marinas, amaderadas e incienso; fondo de almizcle, ámbar gris, ládano y musgo.\r\n\r\nRendimiento: Proyecta bien durante las primeras 5 horas, con una duración total de unas 7-8 horas.\r\n\r\nVersatilidad: Excelente para el uso diario, oficina, universidad o salidas informales en primavera, verano u otoño.",
+    "stock": 3,
+    "precio": 30000,
+    "imagen": "perfumes/imitaciones/Lattafa_Confidencial_Platinum_unisex.webp",
+    "imagen_original": "perfumes/originales/Chanel_Allure_Homme_Sport_Eau_Extreme.webp",
+    "acordes": [
+      15,
+      8,
+      11,
+      10,
+      9,
+      5,
+      23,
+      16
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 35,
+  "fields": {
+    "nombre": "Le Chameau Arabia Hamad unisex",
+    "inspiracion": "Inspirado en Elysium pour Homme Parfum",
+    "caracteristicas": "",
+    "descripcion": "Características: \r\nMarca: Consultar disponibilidad\r\nTipo: Eau de Parfum (EDP)\r\nContenido: Según detalle\r\nGénero: Unisex\r\nEstilo: Oriental / Floral / Amaderado\r\n\r\nAroma equilibrado pensado para acompañar tu día con presencia, estilo y un acabado memorable.",
+    "stock": 3,
+    "precio": 35000,
+    "imagen": "perfumes/imitaciones/Le_Chameau_Arabia_Hamaf_unisex.webp",
+    "imagen_original": "perfumes/originales/Elysium_pour_Homme_Parfum.webp",
+    "acordes": [
+      3,
+      8,
+      11,
+      10,
+      5,
+      18,
+      22,
+      12,
+      16
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 36,
+  "fields": {
+    "nombre": "Armaf Odyssey Limoni Fresh unisex",
+    "inspiracion": "Insipirado en Afternoon Swim",
+    "caracteristicas": "",
+    "descripcion": "Características:\r\n- Marca: Armaf\r\n- Tipo: Eau de Parfum (EDP)\r\n- Contenido: 100ml\r\n- Género: Unisex\r\n- Estilo: Oriental ambarado\r\n\r\nAroma equilibrado y agradable, pensado para acompañar tu día con personalidad y estilo. Ideal para uso diario, oficina u ocasiones especiales según tu gusto.",
+    "stock": 3,
+    "precio": 48000,
+    "imagen": "perfumes/imitaciones/Armaf_Odyssey_Limoni_Fresh_unisex.webp",
+    "imagen_original": "perfumes/originales/afternoon_swim.webp",
+    "acordes": [
+      11,
+      10,
+      9,
+      5,
+      12
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 37,
+  "fields": {
+    "nombre": "Armaf Tag Her Dama",
+    "inspiracion": "Insipirado en Dolce & Gabbana Light Blue",
+    "caracteristicas": "",
+    "descripcion": "Armaf Tag Her EDP 100 ml abre con una chispa fresca de bergamota, neroli y pimienta rosa, evoluciona hacia un corazón floral de azahar, jazmín, rosa, iris y madreselva, y se posa sobre una base cálida de vainilla, caramelo, almizcle y ládano. \r\n\r\nNotas de salida: Bergamota, Neroli, Pimienta Rosa \r\nNotas de corazón: Azahar (Orange Blossom), Jazmín, Rosa, Iris, Madreselva \r\nNotas de fondo: Vainilla, Caramelo, Almizcle, Ládano\r\n\r\nAroma: Floral\r\nGénero: Mujer\r\nOcasión: Día/Noche",
+    "stock": 3,
+    "precio": 38000,
+    "imagen": "perfumes/imitaciones/Armaf_Tag_Her_Dama.webp",
+    "imagen_original": "perfumes/originales/Dolce__Gabbana_Light_Blue.webp",
+    "acordes": [
+      15,
+      11,
+      14,
+      4,
+      21,
+      10,
+      1,
+      19,
+      20,
+      5
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 38,
+  "fields": {
+    "nombre": "Al Haramain Amber Oud Gold Edition unisex",
+    "inspiracion": "Inspirado en  Erba Pura",
+    "caracteristicas": "",
+    "descripcion": "Características: \r\n- Marca: Al Haramain     \r\n- Tipo: Eau de Parfum (EDP)\r\n- Contenido: 120ml\r\n- Género: Unisex\r\n- Estilo: Oriental ambarado\r\n\r\nAroma equilibrado y agradable, pensado para acompañar tu día con personalidad y estilo. Ideal para uso diario, oficina u ocasiones especiales según tu gusto.",
+    "stock": 3,
+    "precio": 89000,
+    "imagen": "perfumes/imitaciones/Al_Hamain_Amber_Oud_Gold_Edition_unisex.webp",
+    "imagen_original": "perfumes/originales/erba_pura_edp_50_ml.webp",
+    "acordes": [
+      17,
+      3,
+      15,
+      14,
+      4,
+      10,
+      1,
+      9,
+      13,
+      16
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 39,
+  "fields": {
+    "nombre": "Le Chameau Arabia Haya mujer",
+    "inspiracion": "Inspirado en Yara de Lattafa",
+    "caracteristicas": "",
+    "descripcion": "Emper Le Chameau Arabia Haya EDP 100 ml es una fragancia unisex que combina notas florales y amaderadas con un toque dulce y especiado.\r\nIdeal para quienes buscan un perfume distintivo que puede ser usado en diversas ocasiones, tanto de día como de noche.\r\n\r\nNotas de salida: Cítricos\r\nNotas de corazón: Rosa, Jazmín\r\nNotas de fondo: Madera de Sándalo, Almizcle",
+    "stock": 3,
+    "precio": 35000,
+    "imagen": "perfumes/imitaciones/Le_Chameau_Arabia_Haya_mujer.webp",
+    "imagen_original": "perfumes/originales/Yara_de_Lattafa_ABLbTle.webp",
+    "acordes": [
+      3,
+      8,
+      14,
+      4,
+      10,
+      1,
+      20
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 40,
+  "fields": {
+    "nombre": "Maison Alhambra Glacier Bella Mujer",
+    "inspiracion": "Inspirado en La Belle de Jean Paul Gaultier",
+    "caracteristicas": "",
+    "descripcion": "Maison Alhambra Glacier Bella EDP 100 ml es una fragancia femenina fresca y elegante que captura la esencia de la naturaleza con sus notas florales y cítricas.\r\n Ideal para las mujeres que buscan una fragancia suave pero impactante, perfecta para el uso diario, especialmente durante la primavera y el verano.\r\n\r\nNotas de salida: mandarina, limón, naranja\r\nNotas de corazón: jazmín, peonía, flor de azahar\r\nNotas de fondo: almizcle, sándalo, cedro",
+    "stock": 3,
+    "precio": 35000,
+    "imagen": "perfumes/imitaciones/Maisom_Alhambra_Glacier_Bella_Mujer.webp",
+    "imagen_original": "perfumes/originales/La_Belle_de_Jean_Paul_Gaultier.webp",
+    "acordes": [
+      14,
+      4,
+      26,
+      10,
+      1
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 41,
+  "fields": {
+    "nombre": "Lattafa Mayar Cherry Intens mujer",
+    "inspiracion": "Inspirado en Yves Saint Laurent Black Opium Over Red.",
+    "caracteristicas": "",
+    "descripcion": "Lattafa Mayar Cherry Intense EDP 100 ml abre con una explosión dulce y afrutada de cereza intensa, seguida de un corazón floral cremoso y un fondo cálido que aporta sensualidad y profundidad.\r\n\r\nNotas de salida: cereza, frambuesa, almendra\r\nNotas de corazón: rosa, jazmín, flor de cerezo\r\nNotas de fondo: vainilla, almizcle, maderas suaves",
+    "stock": 3,
+    "precio": 35000,
+    "imagen": "perfumes/imitaciones/Lattafa_Mayar_Cherry_Intens_mujer.webp",
+    "imagen_original": "perfumes/originales/Yves_Saint_Laurent_Black_Opium_Over_Red..webp",
+    "acordes": [
+      3,
+      14,
+      4,
+      6,
+      1,
+      16
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 42,
+  "fields": {
+    "nombre": "Lattafa Mayar Unisex",
+    "inspiracion": "Inspirado en Angel Nova de Mugler.",
+    "caracteristicas": "",
+    "descripcion": "Lattafa Mayar EDP 100 ml es una fragancia femenina que combina un dulce y floral acorde con una base amaderada.  \r\nSu aroma fresco y envolvente es perfecto para quienes buscan una fragancia suave pero persistente, ideal para el uso diario.\r\n\r\nNotas de salida: bergamota, naranja\r\nNotas de corazón: jazmín, flor de azahar, rosa\r\nNotas de fondo: sándalo, almizcle, ámbar",
+    "stock": 3,
+    "precio": 35000,
+    "imagen": "perfumes/imitaciones/Lattafa_Mayar_Unisex.webp",
+    "imagen_original": "perfumes/originales/Angel_Nova_de_Mugler..webp",
+    "acordes": [
+      17,
+      3,
+      15,
+      1,
+      20,
+      9,
+      25
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 43,
+  "fields": {
+    "nombre": "Just Aswad Fragrance World",
+    "inspiracion": "Inspirado en Dior Sauvage Elixir",
+    "caracteristicas": "",
+    "descripcion": "Características Principales:\r\nPerfil Aromático: Familia Aromática Fougère, con notas de salida de nuez moscada, cardamomo, canela y toronja; corazón de lavanda; y fondo de regaliz, sándalo, ámbar, pachulí y vetiver.\r\n\r\nIntensidad: Alta, con una concentración \"extraordinaria\" de aceites.\r\n\r\nUso Recomendado: Ideal para la noche, citas o climas fríos debido a su calidez especiada.",
+    "stock": 3,
+    "precio": 30000,
+    "imagen": "perfumes/imitaciones/Fragrance_world_Justo_Clon_Sauvage_Elixir_hombre_100_ml..webp",
+    "imagen_original": "perfumes/originales/Dior_Sauvage_Elixir.webp",
+    "acordes": [
+      8,
+      11,
+      14,
+      26,
+      32,
+      6,
+      7,
+      5,
+      27,
+      16
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 44,
+  "fields": {
+    "nombre": "Emper Secrets Of  Diana unisex",
+    "inspiracion": "Inspirado en Delina de Parfums",
+    "caracteristicas": "",
+    "descripcion": "Características:\r\n- Marca: EMPER\r\n- Tipo: Eau de Parfum (EDP)\r\n- Contenido: 100ml\r\n- Género: Mujer\r\n- Estilo: Oriental ambarado\r\n\r\nAroma equilibrado y agradable, pensado para acompañar tu día con personalidad y estilo. Ideal para uso diario, oficina u ocasiones especiales según tu gusto.",
+    "stock": 3,
+    "precio": 30000,
+    "imagen": "perfumes/imitaciones/Emper_Secretos_Of__Diana_unisex.webp",
+    "imagen_original": "perfumes/originales/Delina_de_Parfums.webp",
+    "acordes": [
+      15,
+      4,
+      1,
+      20
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 45,
+  "fields": {
+    "nombre": "Le Chameau Arabia Code unisex",
+    "inspiracion": "Inspirado en Tiziana Terenzi Spirito Fiorentino",
+    "caracteristicas": "",
+    "descripcion": "Características: \r\nMarca: Consultar disponibilidad\r\nTipo: Eau de Parfum (EDP)\r\nContenido: Según detalle\r\nGénero: Unisex\r\nEstilo: Oriental / Floral / Amaderado\r\n\r\nAroma equilibrado pensado para acompañar tu día con presencia, estilo y un acabado memorable.",
+    "stock": 3,
+    "precio": 35000,
+    "imagen": "perfumes/imitaciones/Le_Chameau_Arabia_Code_unisex.webp",
+    "imagen_original": "perfumes/originales/Tiziana_Terenzi_Spirito_Fiorentino.webp",
+    "acordes": [
+      8,
+      11,
+      14,
+      4,
+      10,
+      19,
+      28,
+      29,
+      16
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 46,
+  "fields": {
+    "nombre": "Le Chameau Arabia Naser unisex",
+    "inspiracion": "Inspirado en Armani Code Profumo",
+    "caracteristicas": "",
+    "descripcion": "Características: \r\nMarca: Consultar disponibilidad\r\nTipo: Eau de Parfum (EDP)\r\nContenido: Según detalle\r\nGénero: Unisex\r\nEstilo: Oriental / Floral / Amaderado\r\n\r\nAroma equilibrado pensado para acompañar tu día con presencia, estilo y un acabado memorable.",
+    "stock": 3,
+    "precio": 35000,
+    "imagen": "perfumes/imitaciones/Le_Chameau_Arabia_Naser_unisex.webp",
+    "imagen_original": "perfumes/originales/Armani_Code_Profumo.webp",
+    "acordes": [
+      8,
+      14,
+      4,
+      26,
+      6,
+      1,
+      36
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 47,
+  "fields": {
+    "nombre": "French Avenue Atlantis unisex",
+    "inspiracion": "Inspirado en Wave Child de Room 1015",
+    "caracteristicas": "",
+    "descripcion": "French Avenue Atlantis Extrait De Parfum 100 ml es una fragancia sofisticada,combinando notas cítricas luminosas con un fondo fresco y elegante que evoca la energía del océano. Ideal para quienes buscan un aroma vibrante, moderno y perfecto para el día.\r\n\r\nNotas de salida: Naranja, Bergamota\r\nNotas de corazón: Mandarina\r\nNotas de fondo: Almizcle, Notas acuáticas",
+    "stock": 3,
+    "precio": 59000,
+    "imagen": "perfumes/imitaciones/French_Avenue_Atlantis_unisex.webp",
+    "imagen_original": "perfumes/originales/WAVECHILD.webp",
+    "acordes": [
+      17,
+      3,
+      30,
+      6,
+      10,
+      36,
+      13,
+      16
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 48,
+  "fields": {
+    "nombre": "Asten Atelier unisex",
+    "inspiracion": "Isnpirado en Parfums de Marly Althaïr",
+    "caracteristicas": "",
+    "descripcion": "ASTEN Atelier 100 ml EDP es una fragancia elegante y moderna que equilibra frescura y profundidad, ideal para quienes buscan un aroma versátil y sofisticado.\r\nSu estela refinada lo convierte en un perfume perfecto para destacar con carácter en cualquier momento.\r\n\r\nNotas de salida: Cítricos frescos\r\nNotas de corazón: Especias suaves\r\nNotas de fondo: Maderas, almizcle\r\n\r\nAroma: Amaderado\r\nGénero: Hombre\r\nOcasión: Día/Noche",
+    "stock": 3,
+    "precio": 25000,
+    "imagen": "perfumes/imitaciones/Asten_Atelier_unisex.webp",
+    "imagen_original": "perfumes/originales/parfums_de_marly_althaïr.webp",
+    "acordes": [
+      15,
+      8,
+      10,
+      9,
+      5
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 49,
+  "fields": {
+    "nombre": "Asten Hermosa Superior unisex",
+    "inspiracion": "Inspirado en Erba Pura de Sospiro",
+    "caracteristicas": "",
+    "descripcion": "Características:\r\n- Marca: ASTEN\r\n- Tipo: Eau de Parfum (EDP)\r\n- Contenido: 100ml\r\n- Género: Unisex\r\n- Estilo: Oriental ambarado\r\n\r\nAroma equilibrado y agradable, pensado para acompañar tu día con personalidad y estilo. Ideal para uso diario, oficina u ocasiones especiales según tu gusto.",
+    "stock": 3,
+    "precio": 25000,
+    "imagen": "perfumes/imitaciones/Asten_Hermosa_Superior_unisex.webp",
+    "imagen_original": "perfumes/originales/Erba_Pura_de_Sospiro.webp",
+    "acordes": [
+      3,
+      15,
+      10,
+      1,
+      16
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 50,
+  "fields": {
+    "nombre": "Asten Grassy Hacen Charm unisex",
+    "inspiracion": "Inspirado en Greenwich Village Bond no 9",
+    "caracteristicas": "",
+    "descripcion": "Características:\r\n- Marca: ASTEN\r\n- Tipo: Eau de Parfum (EDP)\r\n- Contenido: 100ml\r\n- Género: Unisex\r\n- Estilo: Oriental ambarado\r\n\r\nAroma equilibrado y agradable, pensado para acompañar tu día con personalidad y estilo. Ideal para uso diario, oficina u ocasiones especiales según tu gusto.",
+    "stock": 3,
+    "precio": 25000,
+    "imagen": "perfumes/imitaciones/Asten_Grassy_Hacen_Charm_unisex.webp",
+    "imagen_original": "perfumes/originales/greenwich.webp",
+    "acordes": [
+      20,
+      9,
+      12,
+      16
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 51,
+  "fields": {
+    "nombre": "Maison Alhambra Eclat de lune",
+    "inspiracion": "Inspirado en L'Interdit Eau de Parfum de Givenchy",
+    "caracteristicas": "",
+    "descripcion": "Características:\r\n- Marca: Maison Alhambra\r\n- Tipo: Eau de Parfum (EDP)\r\n- Contenido: 100ml\r\n- Género: Mujer\r\n- Estilo: Oriental ambarado\r\n\r\nAroma equilibrado y agradable, pensado para acompañar tu día con personalidad y estilo. Ideal para uso diario, oficina u ocasiones especiales según tu gusto.",
+    "stock": 3,
+    "precio": 30000,
+    "imagen": "perfumes/imitaciones/Maisom_Alhambra_Eclat_de_lune_100_ml_mujer..webp",
+    "imagen_original": "perfumes/originales/LInterdit_Eau_de_Parfum_de_Givenchy.webp",
+    "acordes": [
+      3,
+      8,
+      11,
+      10,
+      1,
+      19,
+      5
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 52,
+  "fields": {
+    "nombre": "Lattafa Qimmah mujer",
+    "inspiracion": "Inspirado en Good Girl de Carolina Herrera.",
+    "caracteristicas": "",
+    "descripcion": "Lattafa Qimmah Women EDP 100 ml es una fragancia árabe elegante y cautivadora que combina flores, maderas y notas dulces, evocando feminidad y sofisticación. Perfecta para mujeres seguras que desean dejar una estela distintiva y refinada.\r\n\r\nNotas de salida: lavanda, salvia, azafrán\r\nNotas de corazón: caramelo, praliné, cedro\r\nNotas de fondo: ámbar, madera de oud, pachulí",
+    "stock": 3,
+    "precio": 35000,
+    "imagen": "perfumes/imitaciones/Lattafa_Qimmah_mujer_.webp",
+    "imagen_original": "perfumes/originales/Good_Girl_de_Carolina_Herrera..webp",
+    "acordes": [
+      8,
+      14,
+      4,
+      6,
+      1,
+      19
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 53,
+  "fields": {
+    "nombre": "Lattafa Mayar Natural Intenso mujer",
+    "inspiracion": "Inspirado en Acqua Di Gioia de Giorgio Armani",
+    "caracteristicas": "",
+    "descripcion": "Lattafa Mayar Intense EDP 100 ml es una fragancia femenina intensa y sofisticada que combina notas frutales dulces con un corazón floral elegante y un fondo cálido y envolvente. \r\n\r\nNotas de salida: Frutas rojas, Lichi\r\nNotas de corazón: Rosa, Jazmín\r\nNotas de fondo: Vainilla, Ámbar, Almizcle",
+    "stock": 3,
+    "precio": 35000,
+    "imagen": "perfumes/imitaciones/Lattafa_Mayar_Natural_Intenso_mujer.webp",
+    "imagen_original": "perfumes/originales/Acqua_Di_Gioia_de_Giorgio_Armani.webp",
+    "acordes": [
+      17,
+      3,
+      15,
+      8,
+      10,
+      1,
+      19,
+      20,
+      9,
+      13
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 54,
+  "fields": {
+    "nombre": "Asten Luxe Mom Noir unisex",
+    "inspiracion": "Inspirado en Matière Noire Louis Vuitton",
+    "caracteristicas": "",
+    "descripcion": "Características:\r\n- Marca: ASTEN\r\n- Tipo: Eau de Parfum (EDP)\r\n- Contenido: 100ml\r\n- Género: Unisex\r\n- Estilo: Oriental ambarado\r\n\r\nAroma equilibrado y agradable, pensado para acompañar tu día con personalidad y estilo. Ideal para uso diario, oficina u ocasiones especiales según tu gusto.",
+    "stock": 3,
+    "precio": 30000,
+    "imagen": "perfumes/imitaciones/Asten_Luxe_Mom_Noir_unisex.webp",
+    "imagen_original": "perfumes/originales/Matiere_noire.webp",
+    "acordes": [
+      17,
+      3,
+      11,
+      23,
+      24
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 55,
+  "fields": {
+    "nombre": "Insurrection Reyane Tradition hombre",
+    "inspiracion": "Inspirado en Naxos de Xerjoff",
+    "caracteristicas": "",
+    "descripcion": "Características:\r\n- Marca: Reyane Tradition\r\n- Tipo: Eau de Toilette (EDT)\r\n- Contenido: 100ml\r\n- Género: Hombre\r\n- Estilo: Aromático amaderado\r\n\r\nAroma equilibrado y agradable, pensado para acompañar tu día con personalidad y estilo. Ideal para uso diario, oficina u ocasiones especiales según tu gusto",
+    "stock": 3,
+    "precio": 39000,
+    "imagen": "perfumes/imitaciones/By_Insurrection_100_ml_hombre..webp",
+    "imagen_original": "perfumes/originales/Naxos_de_Xerjoff.webp",
+    "acordes": [
+      8,
+      14,
+      4,
+      6,
+      1,
+      16
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 56,
+  "fields": {
+    "nombre": "Le Chameau Buds Garden Whisper mujer",
+    "inspiracion": "Isnpirado en Carolina Herrera La Bomba",
+    "caracteristicas": "",
+    "descripcion": "Características:\r\nMarca: Consultar disponibilidad\r\nTipo: Eau de Parfum (EDP)\r\nContenido: Según detalle\r\nGénero: Unisex\r\nEstilo: Oriental / Floral / Amaderado\r\n\r\nAroma equilibrado pensado para acompañar tu día con presencia, estilo y un acabado memorable.",
+    "stock": 3,
+    "precio": 32000,
+    "imagen": "perfumes/imitaciones/Le_Chameau_Buds_Garden_Whispe_mujer.webp",
+    "imagen_original": "perfumes/originales/Carolina_Herrera_La_Bomba.webp",
+    "acordes": [
+      17,
+      8,
+      12
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 57,
+  "fields": {
+    "nombre": "Epic Adventure Bleu unisex",
+    "inspiracion": "Inspirado en Armani Code Parfum",
+    "caracteristicas": "",
+    "descripcion": "Características Principales:\r\nAroma: Inspirado en fragancias frescas y aventureras, presenta notas de salida cítricas (cáscara de naranja, notas verdes), corazón floral (jazmín, violeta, lirio) y fondo almizclado/amaderado.\r\n\r\nFamilia Olfativa: Floral Verde o Amaderado Especiado, dependiendo de la variante.\r\n\r\nTipo: Eau de Parfum (EDP) o Eau de Toilette (EDT) de 100 ml.",
+    "stock": 3,
+    "precio": 35000,
+    "imagen": "perfumes/imitaciones/Epic_Aventure_Bleu_unisex..webp",
+    "imagen_original": "perfumes/originales/Armani_Code_Parfum..webp",
+    "acordes": [
+      15,
+      8,
+      10,
+      18,
+      12
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 58,
+  "fields": {
+    "nombre": "Proud Of You Absolute hombre",
+    "inspiracion": "Inspirado en Emporio Armani  Stronger With You Absolutely",
+    "caracteristicas": "",
+    "descripcion": "Fragrance World Proud Of You Absolute EDP 100 ml es una fragancia masculina elegante y poderosa que combina acordes amaderados y especiados con un fondo cálido de ámbar y almizcle. Ideal para hombres seguros que buscan proyectar sofisticación y fuerza.\r\n\r\nNotas de salida: Bergamota, Pimienta Rosa, Nuez Moscada\r\nNotas de corazón: Lavanda, Cedro, Geranio\r\nNotas de fondo: Vetiver, Ámbar Gris, Almizcle",
+    "stock": 3,
+    "precio": 30000,
+    "imagen": "perfumes/imitaciones/Proud_Of_You_Absolute_hombre_100_ml..webp",
+    "imagen_original": "perfumes/originales/Emporio_Armani__Stronger_With_You_Absolutely..webp",
+    "acordes": [
+      8,
+      11,
+      14,
+      4,
+      26,
+      6,
+      5,
+      27,
+      35
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 59,
+  "fields": {
+    "nombre": "Lattafa Perfume Yara Tous Eau De Parfum",
+    "inspiracion": "Inspirado en Fame Paco Rabanne",
+    "caracteristicas": "",
+    "descripcion": "Lattafa Yara Tous EDP 100 ml es una fragancia dulce, cremosa y encantadora que combina acordes frutales, florales y vainilla para crear una experiencia olfativa suave y adictiva.\r\n Ideal para mujeres que buscan un aroma delicado, elegante y lleno de feminidad con el toque distintivo de la línea Yara.\r\n\r\nNotas de salida: Melocotón, Frambuesa, Maracuyá\r\nNotas de corazón: Rosa, Jazmín, Flor de azahar\r\nNotas de fondo: Vainilla, Almizcle blanco, Ámbar",
+    "stock": 3,
+    "precio": 35000,
+    "imagen": "perfumes/imitaciones/Yara_Tous_Lattafa_Perfumes.webp",
+    "imagen_original": "perfumes/originales/Fame_Paco_Rabanne.webp",
+    "acordes": [
+      3,
+      15,
+      8,
+      14,
+      4,
+      30,
+      1,
+      19
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 60,
+  "fields": {
+    "nombre": "Rave Now Women",
+    "inspiracion": "Inspirado en Rave Now Women",
+    "caracteristicas": "",
+    "descripcion": "Rave Now Woman EDP 100 ml es una fragancia femenina vibrante y fresca, ideal para las mujeres que buscan una esencia alegre y duradera. Con una mezcla de notas florales y frutales, este perfume es perfecto para el día y la noche, brindando una sensación de frescura y energía.\r\n\r\nNotas de salida: frambuesa, limón, pera\r\nNotas de corazón: jazmín, rosa, flor de azahar\r\nNotas de fondo: almizcle, sándalo, vainilla",
+    "stock": 3,
+    "precio": 34000,
+    "imagen": "perfumes/imitaciones/rave_now_women.webp",
+    "imagen_original": "perfumes/originales/Burberry_Her_Elixir_oSozNaD..webp",
+    "acordes": [
+      3,
+      14,
+      4,
+      10,
+      1,
+      19,
+      9,
+      12
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 61,
+  "fields": {
+    "nombre": "Asten My Life",
+    "inspiracion": "Inspirado en  My Way de Giorgio Armani",
+    "caracteristicas": "",
+    "descripcion": "Asten My Life EDP 100 ml es una fragancia femenina y delicada con un carácter suave y elegante, ideal para quienes buscan un aroma equilibrado que acompañe el día a día con frescura y encanto. Su estela ligera la hace versátil y agradable.\r\n\r\nNotas de salida: Florales\r\nNotas de corazón: Florales suaves\r\nNotas de fondo: Amaderadas",
+    "stock": 3,
+    "precio": 35000,
+    "imagen": "perfumes/imitaciones/my_life.webp",
+    "imagen_original": "perfumes/originales/My_Way_de_Giorgio_Armani.webp",
+    "acordes": [
+      15,
+      8,
+      4,
+      10,
+      1,
+      20
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 62,
+  "fields": {
+    "nombre": "Lattafa Fakhar Black",
+    "inspiracion": "Inspirado en Yves Saint Laurent",
+    "caracteristicas": "",
+    "descripcion": "Lattafa Fakhar Black EDP 100 ml es una fragancia masculina poderosa y sofisticada que combina notas especiadas, amaderadas y orientales. Ideal para quienes buscan una esencia intensa y duradera, perfecta para ocasiones nocturnas y estaciones frías.\r\n\r\nNotas de salida: bergamota, limón, manzana verde\r\nNotas de corazón: rosa, especias, flor de azahar\r\nNotas de fondo: sándalo, ámbar, almizcle",
+    "stock": 3,
+    "precio": 40000,
+    "imagen": "perfumes/imitaciones/Lattafa_Fakhar_black.webp",
+    "imagen_original": "perfumes/originales/Yves_Saint_Laurent___1.webp",
+    "acordes": [
+      3,
+      8,
+      11,
+      10,
+      9,
+      5,
+      18,
+      27,
+      12,
+      16
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 63,
+  "fields": {
+    "nombre": "Rave Les Femmes Pure Desire",
+    "inspiracion": "Inspirado en La Nuit Trésor de Lancôme",
+    "caracteristicas": "",
+    "descripcion": "Rave Les Femmes Pure Desire Gold es una fragancia femenina lujosa y cautivadora, con una mezcla envolvente de notas dulces y florales que evocan elegancia y sensualidad.",
+    "stock": 3,
+    "precio": 30000,
+    "imagen": "perfumes/imitaciones/Rave_Les_Femmes_Pure_Desire.webp",
+    "imagen_original": "perfumes/originales/La_Nuit_Trésor_de_Lancôme.webp",
+    "acordes": [
+      14,
+      4,
+      26,
+      21,
+      6,
+      10,
+      1,
+      19,
+      16
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 64,
+  "fields": {
+    "nombre": "Bayaan Lattafa",
+    "inspiracion": "Inspirado en Louis Vuitton Ombre Nomade",
+    "caracteristicas": "",
+    "descripcion": "Características:\r\n- Marca: Lattafa\r\n- Tipo: Eau de Parfum (EDP)\r\n- Contenido: 100ml\r\n- Género: Unisex\r\n- Estilo: Oriental ambarado\r\n\r\nAroma equilibrado y agradable, pensado para acompañar tu día con personalidad y estilo. Ideal para uso diario, oficina u ocasiones especiales según tu gusto.",
+    "stock": 3,
+    "precio": 40000,
+    "imagen": "perfumes/imitaciones/Bayaan_Lattafa.webp",
+    "imagen_original": "perfumes/originales/ombre_nomade.webp",
+    "acordes": [
+      3,
+      11,
+      4,
+      6,
+      1,
+      7,
+      25,
+      22
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 65,
+  "fields": {
+    "nombre": "French Avenue Liquid Brun",
+    "inspiracion": "Inspirado en Althaïr de Parfums de Marly",
+    "caracteristicas": "",
+    "descripcion": "French Avenue Liquid Brun EDP 100 ml es una fragancia intensa y sofisticada que combina acordes dulces, ámbar y amaderados para un aroma cálido y envolvente.\r\n Perfecta para quienes disfrutan de perfumes con carácter oriental moderno.\r\n\r\nNotas de salida: Bergamota, Canela, Notas dulces.\r\nNotas de corazón: Ámbar, Rosa, Madera de cachemira.\r\nNotas de fondo: Vainilla, Almizcle, Sándalo, Oud.",
+    "stock": 3,
+    "precio": 45000,
+    "imagen": "perfumes/imitaciones/liquid_brun_french_avenue.webp",
+    "imagen_original": "perfumes/originales/Althaïr_de_Parfums_de_Marly.webp",
+    "acordes": [
+      15,
+      11,
+      14,
+      4,
+      32,
+      6,
+      10,
+      1,
+      19,
+      16
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 66,
+  "fields": {
+    "nombre": "Fakhar Platin Lattafa Perfumes",
+    "inspiracion": "Inspirado en Yves Saint Laurent Y Elixir Parfum",
+    "caracteristicas": "",
+    "descripcion": "Fakhar Lattafa Platin es un EDP unisex/masculino de aroma aromático-fougère, destacado por ser fresco, limpio y elegante con un toque frutal-amaderado. \r\nEs considerado una opción de alta duración (9-10 horas) y proyección, ideal para uso diario o climas cálidos, destacando notas de guayaba, incienso y palo santo. \r\n\r\nNotas de Salida: Bergamota, cardamomo y pimienta rosa.\r\nNotas de Corazón: Guayaba, lavanda y jengibre.\r\nNotas de Fondo: Incienso, sándalo y palo santo.",
+    "stock": 3,
+    "precio": 40000,
+    "imagen": "perfumes/imitaciones/fakhar_lattafa_platin.webp",
+    "imagen_original": "perfumes/originales/Yves_Saint_Laurent_Y_Elixir_Parfum.webp",
+    "acordes": [
+      3,
+      8,
+      11,
+      6,
+      10,
+      9,
+      5,
+      27,
+      16
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 67,
+  "fields": {
+    "nombre": "Lattafa fakhar Women",
+    "inspiracion": "Inspirado en  libre yves saint laurent",
+    "caracteristicas": "",
+    "descripcion": "Lattafa Fakhar Women EDP 100 ml es una fragancia femenina elegante y envolvente que combina dulzura y sofisticación con un carácter moderno y delicado. Ideal para mujeres que buscan un aroma distinguido y versátil.\r\n\r\nNotas de salida: Frutas, Flores Blancas\r\nNotas de corazón: Rosa, Jazmín\r\nNotas de fondo: Vainilla, Almizcle, Maderas",
+    "stock": 3,
+    "precio": 40000,
+    "imagen": "perfumes/imitaciones/Lattafa_Fakhar_White.webp",
+    "imagen_original": "perfumes/originales/libre_yves_saint_laurent.webp",
+    "acordes": [
+      3,
+      8,
+      1,
+      19,
+      20
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 68,
+  "fields": {
+    "nombre": "Fakhar Extrait Lattafa Perfumes",
+    "inspiracion": "Inspirado en 1 Million Parfum de Paco Rabanne",
+    "caracteristicas": "",
+    "descripcion": "Fakhar Extrait Mujer de Lattafa es una fragancia femenina intensa y seductora que combina notas dulces y florales con un fondo amaderado y almizclado, creando un aroma sofisticado, envolvente y duradero.\r\nPerfecta para la noche y climas fríos, esta esencia destaca por su elegancia y fuerte presencia. Proviene de la casa árabe Lattafa, reconocida por su perfumería de lujo con inspiración oriental.",
+    "stock": 3,
+    "precio": 40000,
+    "imagen": "perfumes/imitaciones/LATTAFA_FAKHAR_EXTRAIT_MUJER_EDP.webp",
+    "imagen_original": "perfumes/originales/1_Million_Parfum_de_Paco_Rabanne.webp",
+    "acordes": [
+      15,
+      8,
+      11,
+      6,
+      10,
+      19,
+      16
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 69,
+  "fields": {
+    "nombre": "Arabia Haya Le Chameau 25ml",
+    "inspiracion": "Inspirado en Lattafa Yara Mujer",
+    "caracteristicas": "",
+    "descripcion": "Emper Le Chameau Arabia Haya EDP 25 ml es una fragancia unisex que combina notas florales y amaderadas con un toque dulce y especiado.\r\nIdeal para quienes buscan un perfume distintivo que puede ser usado en diversas ocasiones, tanto de día como de noche.\r\n\r\nNotas de salida: Cítricos\r\nNotas de corazón: Rosa, Jazmín\r\nNotas de fondo: Madera de Sándalo, Almizcle",
+    "stock": 3,
+    "precio": 15000,
+    "imagen": "perfumes/imitaciones/Perfume_Le_Chameau_Arabia_Haya_25ml.webp",
+    "imagen_original": "perfumes/originales/Yara_de_Lattafa_2kbgZ6x.webp",
+    "acordes": [
+      3,
+      8,
+      14,
+      4,
+      10,
+      1,
+      20
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 70,
+  "fields": {
+    "nombre": "Cashmere Sunshine Musk Khadlaj",
+    "inspiracion": "Comparado con Olympea de Paco Rabanne",
+    "caracteristicas": "",
+    "descripcion": "Cashmere Sunshine Musk de Khadlaj  (2024) es un eau de parfum unisex, brillante y envolvente, que combina notas cítricas, florales y almizcladas. Se caracteriza por una salida vibrante de bergamota y mandarina verde, un corazón floral de jazmín y azahar, y un fondo reconfortante de almizcle, ámbar y sándalo, evocando una sensación de calidez y frescura\r\n\r\nNotas de Salida: Bergamota, Mandarina verde.\r\nNotas de Corazón: Flor de azahar del naranjo, Jazmín sambac, Gardenia.\r\nNotas de Fondo: Almizcle, Ámbar, Sándalo, Cachemira",
+    "stock": 3,
+    "precio": 30000,
+    "imagen": "perfumes/imitaciones/cashmere_sunshine_musk_khadlaj.webp",
+    "imagen_original": "perfumes/originales/Olympea_de_Paco_Rabanne.webp",
+    "acordes": [
+      15,
+      8,
+      14,
+      10,
+      19,
+      16
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 71,
+  "fields": {
+    "nombre": "Perfume Le Chameau Arabia Haya Crush",
+    "inspiracion": "Inspirado en Prada Paradoxe",
+    "caracteristicas": "",
+    "descripcion": "Características: \r\nMarca: Consultar disponibilidad\r\nTipo: Eau de Parfum (EDP)\r\nContenido: Según detalle\r\nGénero: Unisex\r\nEstilo: Oriental / Floral / Amaderado\r\n\r\nAroma equilibrado pensado para acompañar tu día con presencia, estilo y un acabado memorable.",
+    "stock": 3,
+    "precio": 35000,
+    "imagen": "perfumes/imitaciones/PERFUME_LE_CHAMEAU_ARABIA_HAYA_CRUSH.webp",
+    "imagen_original": "perfumes/originales/Prada__Paradoxe.webp",
+    "acordes": [
+      3,
+      15,
+      8,
+      14,
+      4,
+      10,
+      1,
+      19
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 72,
+  "fields": {
+    "nombre": "Secrets of Arnia – Emper",
+    "inspiracion": "Inspirado en Erba Pura de Xerjoff",
+    "caracteristicas": "",
+    "descripcion": "Secrets of Arnia de Emper es un perfume unisex árabe de 100ml, conocido por ser una fragancia cítrica-frutal, fresca y dulce. Ofrece una alta duración y una vibrante combinación de frutas, cítricos sicilianos, almizcle blanco y vainilla de Madagascar, ideal para el uso diario y ocasiones",
+    "stock": 3,
+    "precio": 30000,
+    "imagen": "perfumes/imitaciones/secrets_of_arnia.webp",
+    "imagen_original": "perfumes/originales/erba_pura_xerjoff_OgkiCXm.webp",
+    "acordes": [
+      15,
+      4,
+      10,
+      1,
+      16
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 73,
+  "fields": {
+    "nombre": "Perfume Gulf Orchid Honeymoon Unisex",
+    "inspiracion": "Inspirado en Lady Millon Rabanne",
+    "caracteristicas": "",
+    "descripcion": "Características:\r\n- Marca: Gulf Orchid\r\n- Tipo: Eau de Parfum (EDP)\r\n- Contenido: 100ml\r\n- Género: Unisex\r\n- Estilo: Oriental ambarado\r\n\r\nAroma equilibrado y agradable, pensado para acompañar tu día con personalidad y estilo. Ideal para uso diario, oficina u ocasiones especiales según tu gusto.",
+    "stock": 3,
+    "precio": 35000,
+    "imagen": "perfumes/imitaciones/honeymoon4.webp",
+    "imagen_original": "perfumes/originales/Lady_Millon_Rabanne.webp",
+    "acordes": [
+      4,
+      10,
+      1,
+      19,
+      20
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 74,
+  "fields": {
+    "nombre": "Phantom My Hero Emper",
+    "inspiracion": "Inspirado en Black Phantom By Kilian",
+    "caracteristicas": "",
+    "descripcion": "Características:\r\n- Marca: EMPER\r\n- Tipo: Eau de Parfum (EDP)\r\n- Contenido: 100ml\r\n- Género: Unisex\r\n- Estilo: Oriental ambarado\r\n\r\nAroma equilibrado y agradable, pensado para acompañar tu día con personalidad y estilo. Ideal para uso diario, oficina u ocasiones especiales según tu gusto.",
+    "stock": 3,
+    "precio": 30000,
+    "imagen": "perfumes/imitaciones/phantom_my_hero_emper.webp",
+    "imagen_original": "perfumes/originales/Black_Phantom_By_Kilian.webp",
+    "acordes": [
+      8,
+      14,
+      33,
+      21,
+      6,
+      1,
+      35
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 75,
+  "fields": {
+    "nombre": "Junoon Velvet for Women Rasasi",
+    "inspiracion": "Inspirado en Dolce & Gabbana The One",
+    "caracteristicas": "",
+    "descripcion": "Junoon Velvet for Women de Rasasi es una fragancia de la familia olfativa Oriental.\r\nSe describe como un aroma que evoca la nobleza y el refinamiento, inspirado en la suavidad y el lujo del terciopelo.\r\n\r\nNotas de Salida: Una apertura rica y diversa que incluye rosa, grosellas negras, frambuesa, cuero, hojas de tomatera, clavo de olor, canela y vainilla.\r\nNotas de Corazón: El centro evoluciona hacia una mezcla de pachulí, sándalo e incienso de olíbano (franquincienso), aportando una calidez amaderada y mística.\r\nNotas de Fondo: El cierre deja una estela duradera de almizcle, benjuí y ámbar, proporcionando un acabado sensual y envolvente.",
+    "stock": 3,
+    "precio": 25000,
+    "imagen": "perfumes/imitaciones/Junoon_Velvet_for_Women_Rasasi.webp",
+    "imagen_original": "perfumes/originales/Dolce__Gabbana_The_One.webp",
+    "acordes": [
+      3,
+      15,
+      8,
+      11,
+      14,
+      6,
+      5,
+      25,
+      16
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 76,
+  "fields": {
+    "nombre": "Fragrance World Proud of You Men",
+    "inspiracion": "Inspirado en Armani Stronger With You",
+    "caracteristicas": "",
+    "descripcion": "Características:\r\n- Marca: Fragrance World\r\n- Tipo: Eau de Parfum (EDP)\r\n- Contenido: 100ml\r\n- Género: Hombre\r\n- Estilo: Oriental ambarado\r\n\r\nAroma equilibrado y agradable, pensado para acompañar tu día con personalidad y estilo. Ideal para uso diario, oficina u ocasiones especiales según tu gusto.",
+    "stock": 3,
+    "precio": 30000,
+    "imagen": "perfumes/imitaciones/proud_of_you_men.webp",
+    "imagen_original": "perfumes/originales/Armani_Stronger_With_You_Intensely_KV8OESX.webp",
+    "acordes": [
+      15,
+      4,
+      9
+    ]
+  }
+},
+{
+  "model": "perfumes.perfume",
+  "pk": 77,
+  "fields": {
+    "nombre": "Icon Maison Asrar",
+    "inspiracion": "Inspirado en Blue De Chanel",
+    "caracteristicas": "",
+    "descripcion": "Características:\r\n- Marca: MAISON ASRAR\r\n- Tipo: Eau de Parfum (EDP)\r\n- Contenido: 100ml\r\n- Género: Unisex\r\n- Estilo: Oriental ambarado\r\n\r\nAroma equilibrado y agradable, pensado para acompañar tu día con personalidad y estilo. Ideal para uso diario, oficina u ocasiones especiales según tu gusto.",
+    "stock": 3,
+    "precio": 38000,
+    "imagen": "perfumes/imitaciones/Icon_Maison_Asrar.webp",
+    "imagen_original": "perfumes/originales/bleu_de_chanel.webp",
+    "acordes": [
+      3,
+      8,
+      11,
+      6,
+      19,
+      9,
+      23,
+      12,
+      16
+    ]
+  }
+}
+]
