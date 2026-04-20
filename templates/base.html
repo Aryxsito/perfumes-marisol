@@ -1,0 +1,118 @@
+{% load static %}
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Aroma Sublime{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark luxury-nav sticky-top">
+    <div class="container py-2">
+        <a class="navbar-brand fw-semibold brand-mark" href="{% url 'index' %}">
+            <span class="brand-dot"></span>
+            <span class="brand-name-styled">Aroma Sublime</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="mainNav">
+            <div class="navbar-nav mx-auto gap-lg-2 nav-links-luxury">
+                <a class="nav-link" href="{% url 'index' %}#arabes">Perfumes Arabes</a>
+                <a class="nav-link" href="{% url 'index' %}#contacto">Contacto</a>
+            </div>
+            <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+                <!-- Modal de búsqueda -->
+                <button class="icon-pill" aria-label="Buscar" data-bs-toggle="modal" data-bs-target="#searchModal">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 4a6.5 6.5 0 1 0 4.33 11.36l4.39 4.39 1.41-1.41-4.39-4.39A6.5 6.5 0 0 0 10.5 4Zm0 2a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Z" fill="currentColor"/></svg>
+                </button>
+                
+                {% if user.is_authenticated %}
+                    <!-- Usuario logueado -->
+                    <div class="dropdown">
+                        <button class="icon-pill" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Perfil de usuario" title="{{ user.first_name|default:user.username }}">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a4.5 4.5 0 1 0-4.5-4.5A4.5 4.5 0 0 0 12 12Zm0 2c-4.42 0-8 2.24-8 5v1h16v-1c0-2.76-3.58-5-8-5Z" fill="currentColor"/></svg>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" style="background: rgba(26, 26, 26, 0.95); border: 1px solid var(--dark-border); border-radius: 8px;">
+                            <li><span class="dropdown-header" style="color: var(--gold-primary);">{{ user.first_name|default:user.username }}</span></li>
+                            {% if user.is_staff %}
+                                <li><span class="dropdown-header small" style="color: var(--text-muted); font-size: 0.75rem; text-transform: uppercase;">Administrador</span></li>
+                                <li><hr class="dropdown-divider" style="border-color: var(--dark-border);"></li>
+                                <li><a class="dropdown-item" href="{% url 'perfume_create' %}" style="color: var(--text-light);">+ Agregar Perfume</a></li>
+                            {% endif %}
+                            <li><hr class="dropdown-divider" style="border-color: var(--dark-border);"></li>
+                            <li><a class="dropdown-item" href="{% url 'logout' %}" style="color: var(--text-light);">Cerrar sesión</a></li>
+                        </ul>
+                    </div>
+                {% else %}
+                    <!-- Usuario no logueado -->
+                    <a href="{% url 'login' %}" class="icon-pill" type="button" aria-label="Iniciar sesión" title="Administrador">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a4.5 4.5 0 1 0-4.5-4.5A4.5 4.5 0 0 0 12 12Zm0 2c-4.42 0-8 2.24-8 5v1h16v-1c0-2.76-3.58-5-8-5Z" fill="currentColor"/></svg>
+                    </a>
+                {% endif %}
+                
+                {% if user.is_authenticated and user.is_staff %}
+                    <a class="btn btn-ghost-gold" href="{% url 'perfume_create' %}">+ Agregar</a>
+                {% else %}
+                    <a class="btn btn-ghost-gold" href="{% url 'perfume_create' %}">Venta Mayorista</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="container py-4">
+    {% if messages %}
+        <div class="messages-container mb-4">
+            {% for message in messages %}
+                <div class="alert-luxury alert-success-luxury mb-2">
+                    <div class="d-flex align-items-center gap-2">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>{{ message }}</span>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    {% block content %}{% endblock %}
+</main>
+
+<!-- Modal de búsqueda global -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background: rgba(26, 26, 26, 0.95); border: 1px solid var(--dark-border);">
+            <div class="modal-header border-0">
+                <h5 class="modal-title" id="searchModalLabel" style="color: var(--gold-primary);">Buscar Perfume</h5>
+                <button type="button" class="btn-close" style="filter: invert(1);" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <form method="get" action="{% url 'index' %}">
+                    <div class="input-group">
+                        <input type="text" name="q" class="form-control" placeholder="Buscar por marca o inspiración..." style="background: rgba(15, 15, 15, 0.8); border: 1px solid var(--dark-border); color: var(--text-light);">
+                        <button class="btn btn-luxury-primary" type="submit">Buscar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Formatear precios con puntos
+document.addEventListener('DOMContentLoaded', function() {
+    const priceElements = document.querySelectorAll('.price-formatted');
+    priceElements.forEach(element => {
+        const price = element.textContent.replace('$', '').trim();
+        const formatted = parseInt(price).toLocaleString('es-CL');
+        element.textContent = '$' + formatted;
+    });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ title }} | Aroma Sublime{% endblock %}
+
+{% block content %}
+<div class="form-luxury-container">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-6">
+                <!-- Encabezado -->
+                <div class="text-center mb-5">
+                    <span class="eyebrow luxury-eyebrow">Gestión de Productos</span>
+                    <h1 class="h1 mb-2">{{ title }}</h1>
+                    <p class="text-muted">Completa los detalles de tu perfume</p>
+                </div>
+
+                <!-- Tarjeta de formulario luxury -->
+                <div class="form-card-luxury">
+                    <form method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        
+                        <!-- Nombre -->
+                        <div class="form-group-luxury">
+                            <label for="{{ form.nombre.id_for_label }}" class="form-label-luxury">Nombre del perfume</label>
+                            <div class="form-input-wrapper">
+                                {{ form.nombre }}
+                                {% if form.nombre.errors %}
+                                    <div class="form-error">{{ form.nombre.errors|striptags }}</div>
+                                {% endif %}
+                            </div>
+                        </div>
+
+                        <!-- Inspiración -->
+                        <div class="form-group-luxury">
+                            <label for="{{ form.inspiracion.id_for_label }}" class="form-label-luxury">Inspiración</label>
+                            <div class="form-input-wrapper">
+                                {{ form.inspiracion }}
+                                {% if form.inspiracion.errors %}
+                                    <div class="form-error">{{ form.inspiracion.errors|striptags }}</div>
+                                {% endif %}
+                            </div>
+                        </div>
+
+                        <!-- Descripción -->
+                        <div class="form-group-luxury">
+                            <label for="{{ form.descripcion.id_for_label }}" class="form-label-luxury">Descripción</label>
+                            <div class="form-input-wrapper">
+                                {{ form.descripcion }}
+                                {% if form.descripcion.errors %}
+                                    <div class="form-error">{{ form.descripcion.errors|striptags }}</div>
+                                {% endif %}
+                            </div>
+                        </div>
+
+                        <!-- Precio -->
+                        {% if form.precio %}
+                        <div class="form-group-luxury">
+                            <label for="{{ form.precio.id_for_label }}" class="form-label-luxury">Precio (CLP)</label>
+                            <div class="form-input-wrapper">
+                                {{ form.precio }}
+                                {% if form.precio.errors %}
+                                    <div class="form-error">{{ form.precio.errors|striptags }}</div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        <!-- Stock -->
+                        <div class="form-group-luxury">
+                            <label for="{{ form.stock.id_for_label }}" class="form-label-luxury">Stock disponible</label>
+                            <div class="form-input-wrapper">
+                                {{ form.stock }}
+                                {% if form.stock.errors %}
+                                    <div class="form-error">{{ form.stock.errors|striptags }}</div>
+                                {% endif %}
+                            </div>
+                        </div>
+
+                        <!-- Foto principal -->
+                        <div class="form-group-luxury">
+                            <label for="{{ form.imagen.id_for_label }}" class="form-label-luxury">Foto de imitación</label>
+                            <div class="form-file-wrapper">
+                                {{ form.imagen }}
+                                <div class="file-hint">JPG, PNG (máx. 5MB)</div>
+                            </div>
+                            {% if form.imagen.errors %}
+                                <div class="form-error">{{ form.imagen.errors|striptags }}</div>
+                            {% endif %}
+                        </div>
+
+                        <!-- Foto original -->
+                        <div class="form-group-luxury">
+                            <label for="{{ form.imagen_original.id_for_label }}" class="form-label-luxury">Foto del original</label>
+                            <div class="form-file-wrapper">
+                                {{ form.imagen_original }}
+                                <div class="file-hint">JPG, PNG (máx. 5MB)</div>
+                            </div>
+                            {% if form.imagen_original.errors %}
+                                <div class="form-error">{{ form.imagen_original.errors|striptags }}</div>
+                            {% endif %}
+                        </div>
+
+                        <!-- Acordes principales -->
+                        <div class="form-group-luxury">
+                            <label class="form-label-luxury">Acordes principales</label>
+                            <div class="form-acordes-wrapper">
+                                {% for acorde in form.acordes.field.queryset %}
+                                <div class="acorde-checkbox">
+                                    <input type="checkbox" id="id_acorde_{{ acorde.id }}" name="acordes" value="{{ acorde.id }}"
+                                        {% if acorde in form.acordes.value %}checked{% endif %}>
+                                    <label for="id_acorde_{{ acorde.id }}" class="acorde-label" style="background-color: {{ acorde.color }};">
+                                        <span class="acorde-text">{{ acorde.nombre }}</span>
+                                    </label>
+                                </div>
+                                {% endfor %}
+                            </div>
+                            {% if form.acordes.errors %}
+                                <div class="form-error">{{ form.acordes.errors|striptags }}</div>
+                            {% endif %}
+                        </div>
+
+                        <!-- Botones -->
+                        <div class="form-actions-luxury">
+                            <button type="submit" class="btn btn-luxury-primary btn-lg">Guardar perfume</button>
+                            <a href="{% url 'index' %}" class="btn btn-luxury-secondary btn-lg">Cancelar</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const precioInput = document.getElementById('id_precio');
+    
+    if (precioInput) {
+        precioInput.addEventListener('input', function(e) {
+            // Obtener solo los números
+            let value = this.value.replace(/\D/g, '');
+            
+            // Formatear con puntos
+            if (value) {
+                let formatted = '';
+                for (let i = value.length - 1, count = 0; i >= 0; i--, count++) {
+                    if (count > 0 && count % 3 === 0) {
+                        formatted = '.' + formatted;
+                    }
+                    formatted = value[i] + formatted;
+                }
+                this.value = formatted;
+            }
+        });
+        
+        // Al hacer submit, limpiar los puntos para guardar correctamente
+        precioInput.closest('form').addEventListener('submit', function(e) {
+            precioInput.value = precioInput.value.replace(/\./g, '');
+        });
+    }
+});
+</script>
+{% endblock %}

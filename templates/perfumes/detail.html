@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ perfume.nombre }} | Aroma Sublime{% endblock %}
+
+{% block content %}
+<div class="detail-luxury-container">
+    <div class="container detail-content-wrapper">
+        <!-- Encabezado -->
+        <section class="detail-hero-luxury mb-2">
+            <div class="row align-items-end">
+                <div class="col-12 col-lg-8">
+                    <span class="eyebrow luxury-eyebrow">Ficha del perfume</span>
+                    <h1 class="h3 mb-2">{{ perfume.nombre }}</h1>
+                    <p class="luxury-subtitle">{{ perfume.inspiracion }}</p>
+                </div>
+                <div class="col-12 col-lg-4 text-lg-end">
+                    <div class="detail-chip-group">
+                        {% if perfume.precio %}
+                        <span class="detail-chip-luxury" style="background: rgba(160, 88, 28, 0.2); border: 1px solid #a0581c; color: #c9a961; font-weight: 600; font-size: 1.1rem;"><span class="price-formatted">${{ perfume.precio }}</span> CLP</span>
+                        {% endif %}
+                        <span class="detail-chip-luxury">Stock: {{ perfume.stock }}</span>
+                        <span class="detail-chip-luxury">Comparación visual</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fotos comparativas y Acordes -->
+        <section class="detail-photos-section mb-2">
+            <div class="row g-2 align-items-stretch">
+                <!-- Columna izquierda: Fotos -->
+                <div class="col-12 col-lg-8">
+                    <div class="row g-2 h-100">
+                        <!-- Inspiración -->
+                        <div class="col-12 col-sm-6">
+                            <div class="detail-card-luxury">
+                                <div class="detail-card-header">
+                                    <span class="detail-card-label">Inspiración</span>
+                                </div>
+                                <div class="detail-card-media">
+                                    {% if perfume.imagen %}
+                                        <img src="{{ perfume.imagen.url }}" class="detail-img-luxury" alt="{{ perfume.nombre }} (inspiración)">
+                                    {% else %}
+                                        <div class="placeholder-img-luxury">
+                                            <span>Sin foto de inspiración</span>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Original -->
+                        <div class="col-12 col-sm-6">
+                            <div class="detail-card-luxury">
+                                <div class="detail-card-header">
+                                    <span class="detail-card-label">Original</span>
+                                </div>
+                                <div class="detail-card-media">
+                                    {% if perfume.imagen_original %}
+                                        <img src="{{ perfume.imagen_original.url }}" class="detail-img-luxury" alt="{{ perfume.inspiracion }} (original)">
+                                    {% else %}
+                                        <div class="placeholder-img-luxury">
+                                            <span>Sin foto del original</span>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna derecha: Acordes -->
+                {% if perfume.acordes.all %}
+                <div class="col-12 col-lg-4">
+                    <div class="detail-acordes-container-compact">
+                        <h2 class="detail-acordes-title">Acordes</h2>
+                        <div class="acordes-list-compact">
+                            {% for acorde in perfume.acordes.all %}
+                            <span class="acorde-tag" style="background-color: {{ acorde.color }};">
+                                {{ acorde.nombre }}
+                            </span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </section>
+
+        <!-- Descripción e info -->
+        <section class="detail-description-section">
+            <div class="row g-2">
+                <!-- Descripción y Características -->
+                <div class="col-12 col-lg-8">
+                    {% if perfume.caracteristicas %}
+                    <div class="detail-description-card mb-3">
+                        <div class="detail-section-header">
+                            <h2 class="h3">Características</h2>
+                        </div>
+                        <div class="detail-section-content">
+                            <ul class="characteristics-list">
+                                {% for linea in perfume.caracteristicas|linebreaks %}
+                                    {% if linea|striptags|length > 0 %}
+                                        <li class="characteristic-item">{{ linea|safe }}</li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    {% endif %}
+                    
+                    <div class="detail-description-card">
+                        <div class="detail-section-header">
+                            <h2 class="h3">Descripción</h2>
+                        </div>
+                        <div class="detail-section-content">
+                            <p class="detail-description-text">{{ perfume.descripcion|linebreaks }}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel de datos -->
+                <div class="col-12 col-lg-4">
+                    <div class="detail-info-panel">
+                        <div class="detail-section-header">
+                            <h3 class="h5">Datos rápidos</h3>
+                        </div>
+                        <div class="detail-info-items">
+                            <div class="detail-info-item">
+                                <span class="detail-info-label">Inspirado en</span>
+                                <span class="detail-info-value">{{ perfume.inspiracion }}</span>
+                            </div>
+                            <div class="detail-info-item">
+                                <span class="detail-info-label">Stock disponible</span>
+                                <span class="detail-info-value">{{ perfume.stock }} unidades</span>
+                            </div>
+                            <div class="detail-info-item">
+                                <span class="detail-info-label">Categoría</span>
+                                <span class="detail-info-value">Inspiración Premium</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Acciones -->
+            <div class="detail-actions mt-2">
+                <a href="{% url 'perfume_update' perfume.pk %}" class="btn btn-luxury-primary btn-lg">Editar producto</a>
+                <a href="{% url 'index' %}" class="btn btn-luxury-secondary btn-lg">Volver al catálogo</a>
+            </div>
+        </section>
+    </div>
+</div>
+{% endblock %}

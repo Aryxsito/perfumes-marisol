@@ -1,0 +1,289 @@
+{% extends 'base.html' %}
+
+{% block title %}Catalogo | Aroma Sublime{% endblock %}
+
+{% block content %}
+<section class="hero-luxury mb-4 rounded-5 overflow-hidden">
+    <div class="silk-layer silk-layer-1"></div>
+    <div class="silk-layer silk-layer-2"></div>
+    <div class="gold-particle gold-particle-1"></div>
+    <div class="gold-particle gold-particle-2"></div>
+    <div class="row g-4 align-items-center position-relative">
+        <div class="col-12 col-lg-6">
+            <span class="eyebrow luxury-eyebrow">Aroma Sublime</span>
+            <h1 class="hero-title mb-3">
+                <span class="script-title">Descubre tu Esencia</span>
+                <span class="d-block">El lujo en cada Gota</span>
+            </h1>
+            <p class="hero-copy mb-4">Una experiencia sofisticada para explorar perfumes de alta presencia visual, con elegancia orgánica, brillos metalicos y un <span class="highlight-sublime">Aroma Sublime</span></p>
+            <form method="get" class="luxury-search-panel p-2 rounded-4">
+                <div class="row g-2">
+                    <div class="col-12 col-md-8">
+                        <input type="text" name="q" value="{{ query }}" class="form-control form-control-lg search-input-dark" placeholder="Buscar por marca, inspiracion o acorde">
+                    </div>
+                    <div class="col-12 col-md-4 d-grid">
+                        <button class="btn btn-luxury-primary btn-lg" type="submit">Explorar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-12 col-lg-6">
+            <div class="hero-bottle-stage">
+                <div class="bottle-shadow"></div>
+                <!-- Carrusel de perfumes -->
+                <div class="perfume-carousel">
+                    {% if perfumes %}
+                        {% for perfume in perfumes %}
+                            <div class="carousel-slide {% if forloop.first %}active{% endif %}" data-type="perfume">
+                                <a href="{% url 'perfume_detail' perfume.pk %}" class="hero-bottle-link">
+                                    {% if perfume.imagen %}
+                                        <img src="{{ perfume.imagen.url }}" class="hero-bottle carousel-img" alt="{{ perfume.nombre }}">
+                                    {% else %}
+                                        <div class="hero-bottle-fallback" style="display: flex; align-items: center; justify-content: center;">
+                                            <img src="{{ MEDIA_URL }}logos/aroma-sublime-logo.png" alt="Aroma Sublime" class="hero-logo" onerror="this.style.display='none';">
+                                        </div>
+                                    {% endif %}
+                                </a>
+                            </div>
+                        {% endfor %}
+                        <!-- Slide con logo -->
+                        <div class="carousel-slide" data-type="logo">
+                            <a href="{% url 'index' %}" class="hero-bottle-link">
+                                <img src="{{ MEDIA_URL }}logos/aroma-sublime-logo.png" alt="Aroma Sublime" class="hero-logo" style="max-width: 280px; max-height: 280px;">
+                            </a>
+                        </div>
+                    {% else %}
+                        <div class="carousel-slide active">
+                            <div class="hero-bottle-fallback" style="display: flex; align-items: center; justify-content: center;">
+                                <img src="{{ MEDIA_URL }}logos/aroma-sublime-logo.png" alt="Aroma Sublime" class="hero-logo" onerror="this.style.display='none';">
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="luxury-sections mb-3" id="arabes"></div>
+<div class="section-heading d-flex align-items-end justify-content-between mb-3">
+    <div>
+        <span class="eyebrow luxury-eyebrow">Mas vendidos</span>
+        <h2 class="h3 mb-1">Perfumes Arabes</h2>
+        <p class="section-subtitle mb-0">Tarjetas limpias, tactiles y visuales con control rapido de cantidad.</p>
+    </div>
+    {% if user.is_authenticated and user.is_staff %}
+        <a href="{% url 'perfume_create' %}" class="btn btn-outline-light rounded-pill d-none d-md-inline-flex">+ Agregar perfume</a>
+    {% endif %}
+</div>
+
+<div class="row g-3">
+    {% for perfume in perfumes %}
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card card-luxury border-0 h-100 overflow-hidden rounded-4">
+                <a href="{% url 'perfume_detail' perfume.pk %}" class="image-link" aria-label="Ver {{ perfume.nombre }}">
+                    {% if perfume.imagen %}
+                        <div class="perfume-media">
+                            <img src="{{ perfume.imagen.url }}" class="card-img-top perfume-img" alt="{{ perfume.nombre }}">
+                        </div>
+                    {% else %}
+                        <div class="placeholder-img d-flex align-items-center justify-content-center">Sin imagen</div>
+                    {% endif %}
+                </a>
+                <div class="card-body d-flex flex-column">
+                    <span class="brand-line">Marca premium</span>
+                    <h2 class="h5 card-title mb-1 text-luxury-dark">
+                        <a href="{% url 'perfume_detail' perfume.pk %}" class="title-link">{{ perfume.nombre }}</a>
+                    </h2>
+                    <p class="perfume-inspiration small mb-3">{{ perfume.inspiracion }}</p>
+                    {% if perfume.precio %}
+                    <div class="price-display mb-3" style="padding: 8px 12px; background: rgba(160, 88, 28, 0.15); border-radius: 8px; border-left: 3px solid #a0581c; font-size: 0.9rem;">
+                        <span style="color: #999;">Precio</span>
+                        <p style="margin: 0; font-size: 1.2rem; font-weight: 600; color: #c9a961;"><span class="price-formatted">${{ perfume.precio }}</span><span style="font-size: 0.8rem;"> CLP</span></p>
+                    </div>
+                    {% endif %}
+
+                    <div class="stock-box luxury-stock d-flex align-items-center justify-content-between mt-auto mb-3">
+                        <span class="fw-semibold">Cantidad</span>
+                        <div class="d-flex align-items-center gap-1">
+                            {% if user.is_authenticated and user.is_staff %}
+                                <form method="post" action="{% url 'update_stock' perfume.pk %}" class="stock-update-form" style="margin: 0;">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="action" value="decrement">
+                                    <button class="btn btn-sm btn-luxury-square" type="submit">-</button>
+                                </form>
+                            {% endif %}
+                            <span class="stock-value">{{ perfume.stock }}</span>
+                            {% if user.is_authenticated and user.is_staff %}
+                                <form method="post" action="{% url 'update_stock' perfume.pk %}" class="stock-update-form" style="margin: 0;">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="action" value="increment">
+                                    <button class="btn btn-sm btn-luxury-square" type="submit">+</button>
+                                </form>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <a href="{% url 'perfume_detail' perfume.pk %}" class="btn btn-luxury-cta w-100 mb-2">Ver detalles</a>
+                    <div class="d-flex gap-2 justify-content-between align-items-center">
+
+                    {% if user.is_authenticated and user.is_staff %}
+                        <a href="{% url 'perfume_update' perfume.pk %}" class="btn btn-outline-light btn-sm">Editar</a>
+                        <button type="button" class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal" onclick="document.getElementById('deleteForm').action='{% url 'perfume_delete' perfume.pk %}';">Eliminar</button>
+                    {% endif %}
+                </div>
+                </div>
+            </div>
+        </div>
+    {% empty %}
+        <div class="col-12">
+            <div class="empty-state text-center p-5 rounded-4">No hay perfumes cargados aun.</div>
+        </div>
+    {% endfor %}
+</div>
+
+<section class="contact-luxury mt-4 rounded-4 p-4 p-md-5" id="contacto">
+    <div class="row g-4 align-items-start">
+        <div class="col-12">
+            <span class="eyebrow luxury-eyebrow">Contacto</span>
+            <h3 class="h2 mb-4">Atencion privada y pedidos especiales</h3>
+            <div class="contact-grid">
+                <a href="https://instagram.com/aromasublime_26" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <svg viewBox="0 0 24 24" class="contact-icon">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.322a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z" fill="currentColor"/>
+                    </svg>
+                    <div class="contact-text">
+                        <span class="contact-label">Instagram</span>
+                        <span class="contact-value">@aromasublime_26</span>
+                    </div>
+                </a>
+
+                <a href="https://wa.me/56928508858" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <svg viewBox="0 0 24 24" class="contact-icon">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a8.368 8.368 0 0 0-8.239 8.369c0 1.448.338 2.869.978 4.189L2.89 22.352l4.382-1.447c1.289.703 2.743 1.073 4.278 1.073 4.592 0 8.631-3.629 8.631-8.102a8.116 8.116 0 0 0-2.393-5.78 8.104 8.104 0 0 0-5.747-2.38m6.772 13.923c-.249.067-.469.11-.676.11-.201 0-.402-.035-.597-.108-1.255-.4-2.547-1.009-3.631-1.84-.99-.759-1.844-1.684-2.524-2.717-.536-.823-.812-1.73-.812-2.67 0-3.45 2.612-6.26 5.855-6.26 1.542 0 2.987.544 4.118 1.537 1.118 1.002 1.823 2.38 1.823 3.807 0 3.577-2.651 6.556-6.15 6.556" fill="currentColor"/>
+                    </svg>
+                    <div class="contact-text">
+                        <span class="contact-label">WhatsApp</span>
+                        <span class="contact-value">+56 9 2850 8858</span>
+                    </div>
+                </a>
+
+                <a href="mailto:aromasublime1971@gmail.com" class="contact-item">
+                    <svg viewBox="0 0 24 24" class="contact-icon">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/>
+                    </svg>
+                    <div class="contact-text">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">aromasublime1971@gmail.com</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal de Confirmación de Eliminación -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background: linear-gradient(180deg, rgba(26, 26, 26, 0.95), rgba(15, 10, 10, 0.9)); border: 1px solid var(--dark-border); border-radius: 12px;">
+            <div class="modal-header border-bottom" style="border-color: var(--dark-border);">
+                <h5 class="modal-title" id="deleteModalLabel" style="color: var(--text-light);">Eliminar perfume</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body" style="color: var(--text-light);">
+                <p>¿Estás segura de que deseas eliminar este perfume?</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0;">Esta acción no se puede deshacer.</p>
+            </div>
+            <div class="modal-footer border-top" style="border-color: var(--dark-border); gap: 1rem;">
+                <button type="button" class="btn btn-luxury-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <form method="post" id="deleteForm" style="margin: 0;">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-danger">Eliminar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Carrusel automático de perfumes con logo cada 5 perfumes
+document.addEventListener('DOMContentLoaded', function() {
+    const carousel = document.querySelector('.perfume-carousel');
+    if (!carousel) return;
+    
+    const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+    if (slides.length <= 1) return;
+    
+    const intervalTime = 4000;
+    const logoSlide = document.querySelector('[data-type="logo"]');
+    const perfumeSlides = slides.filter(slide => slide.getAttribute('data-type') === 'perfume');
+    
+    if (perfumeSlides.length === 0) return;
+    
+    let currentPerfumeIndex = 0;
+    let cycleCount = 0; // Cuenta el ciclo total (5 perfumes + 1 logo)
+    
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+        });
+    }
+    
+    function nextSlide() {
+        // Logo cada 6 ciclos (5 perfumes + 1 logo)
+        if (logoSlide && cycleCount % 6 === 5) {
+            showSlide(slides.indexOf(logoSlide));
+        } else {
+            // Mostrar siguiente perfume
+            showSlide(slides.indexOf(perfumeSlides[currentPerfumeIndex]));
+            currentPerfumeIndex = (currentPerfumeIndex + 1) % perfumeSlides.length;
+        }
+        cycleCount++;
+    }
+    
+    // Iniciar carrusel automático
+    setInterval(nextSlide, intervalTime);
+    
+    // Manejo de actualización de stock con AJAX
+    const stockForms = document.querySelectorAll('.stock-update-form');
+    stockForms.forEach(form => {
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const formData = new FormData(form);
+            const action = formData.get('action');
+            const url = form.getAttribute('action');
+            
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'X-Requested-With': 'XMLHttpRequest'
+                    }
+                });
+                
+                if (!response.ok) {
+                    throw new Error('Error en la petición');
+                }
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    // Actualizar el valor del stock en el DOM
+                    const stockValue = form.parentElement.querySelector('.stock-value');
+                    if (stockValue) {
+                        stockValue.textContent = data.new_stock;
+                    }
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Hubo un error al actualizar el stock.');
+            }
+        });
+    });
+});
+
+</script>
+
+{% endblock %}
