@@ -1,2 +1,1 @@
-web: gunicorn config.wsgi:application
-release: python manage.py migrate && python manage.py load_catalog
+web: sh -c "python manage.py migrate && python manage.py load_catalog && gunicorn config.wsgi:application"
